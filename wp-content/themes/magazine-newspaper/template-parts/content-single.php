@@ -38,7 +38,7 @@
     
     <article>
       <?php the_content(); ?>
-      <?php the_excerpt(); ?>
+<!--      --><?php //the_excerpt(); ?>
 
       <?php
         wp_link_pages( array(
