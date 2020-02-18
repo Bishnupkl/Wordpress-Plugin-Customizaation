@@ -1,0 +1,941 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Magazine Newspaper\n"
+"POT-Creation-Date: 2018-03-18 22:11+0545\n"
+"PO-Revision-Date: 2018-03-18 22:21+0545\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.6\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: style.css\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: 404.php:14
+msgid "Oops! That page can&rsquo;t be found."
+msgstr "Désolé ! Cette page n’existe pas."
+
+#: 404.php:21
+msgid ""
+"It looks like nothing was found at this location. Maybe try one of the links "
+"below or a search?"
+msgstr ""
+"Contenu Introuvable. L'outil de Recherche ou les Liens ci-dessous vous "
+"remettront peut-être sur la voie ?"
+
+#. translators: %s: post title
+#: comments.php:29
+#, php-format
+msgctxt "comments title"
+msgid "One thought on &ldquo;%s&rdquo;"
+msgstr "Un commentaire sur &ldquo;%s&rdquo;"
+
+#: comments.php:31
+#, fuzzy, php-format
+msgctxt "comments title"
+msgid "%1$s thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] "%1$s pensait sur \"%2$s\""
+msgstr[1] ""
+
+#: comments.php:41 comments.php:62
+msgid "Comment navigation"
+msgstr "Commentaires des navigations"
+
+#: comments.php:44 comments.php:65
+msgid "Older Comments"
+msgstr "Commentaires plus anciens"
+
+#: comments.php:45 comments.php:66
+msgid "Newer Comments"
+msgstr "Commentaires récents"
+
+#: comments.php:78
+msgid "Comments are closed."
+msgstr "Les commentaires sont fermés"
+
+#: footer.php:17
+msgid "Powered by"
+msgstr "Propulsé par"
+
+#: footer.php:17
+msgid "WordPress"
+msgstr "Wordpress"
+
+#: footer.php:17
+msgid "Theme by"
+msgstr "Thème par"
+
+#: footer.php:17
+msgid "The Bootstrap Themes"
+msgstr "The Bootstrap Themes"
+
+#: functions.php:45
+msgid "Top Menu"
+msgstr "Menú Superior"
+
+#: functions.php:46
+msgid "Primary Menu"
+msgstr "Menu Principal"
+
+#: header.php:83
+msgid "Toggle navigation"
+msgstr "Afficher navigation"
+
+#: inc/class.php:43
+msgid "Recent Posts"
+msgstr "Articles récents"
+
+#: inc/customizer.php:26
+msgid "Colors and Fonts"
+msgstr "Couleurs et polices"
+
+#: inc/customizer.php:51 inc/theme-info/about.php:29
+#: inc/theme-info/class-about.php:603
+#: trt-customize-pro/magazine-newspaper/class-customize.php:77
+msgid "Upgrade to Pro"
+msgstr "Passer à la version Pro"
+
+#: inc/customizer.php:54
+msgid " for more color and font options"
+msgstr "Pour plus d’options de couleur et la police"
+
+#: inc/customizer.php:68
+msgid "Header / Banner"
+msgstr "Bannière d’en-tête"
+
+#: inc/customizer.php:72 inc/customizer.php:73
+msgid "Magazine Newspaper Options"
+msgstr "Options de journal magazine"
+
+#: inc/customizer.php:88
+msgid "Breaking News "
+msgstr "Dernières nouvelles"
+
+#: inc/customizer.php:89
+msgid "Select the Category for Breaking News"
+msgstr "Sélectionnez la catégorie pour les dernières nouvelles"
+
+#: inc/customizer.php:99 inc/customizer.php:148 inc/customizer.php:197
+#: inc/customizer.php:245 inc/customizer.php:294 inc/customizer.php:347
+msgid "Display?"
+msgstr "Afficher ?"
+
+#: inc/customizer.php:108
+msgid "Breaking News"
+msgstr "Flash information"
+
+#: inc/customizer.php:112 inc/customizer.php:161 inc/customizer.php:209
+#: inc/customizer.php:258 inc/customizer.php:360
+msgid "Title"
+msgstr "Par mots clés"
+
+#: inc/customizer.php:124 inc/customizer.php:173 inc/customizer.php:372
+msgid "Choose category"
+msgstr "Choisissez une catégorie"
+
+#: inc/customizer.php:137
+msgid "Top News "
+msgstr "Actualités"
+
+#: inc/customizer.php:138
+msgid "Select the Category for Top News"
+msgstr "Sélectionnez la catégorie nouvelles Albums"
+
+#: inc/customizer.php:186
+msgid "Slider / Banner News "
+msgstr "Bannière coulissante"
+
+#: inc/customizer.php:187
+msgid "Select the Category for Banner News"
+msgstr "Sélectionnez la catégorie nouvelles bannière"
+
+#: inc/customizer.php:221 inc/customizer.php:270 inc/customizer.php:321
+msgid "Choose Category"
+msgstr "Choisir une catégorie"
+
+#: inc/customizer.php:234
+msgid "Recent News "
+msgstr "Dernières publications"
+
+#: inc/customizer.php:235 inc/customizer.php:284
+msgid "Select the Category for Recent News"
+msgstr "Sélectionnez la catégorie pour les nouvelles récentes"
+
+#: inc/customizer.php:283
+msgid "Category News"
+msgstr "Actualités par catégories"
+
+#: inc/customizer.php:309
+msgid "Category Title"
+msgstr "Titre de la section catégories"
+
+#: inc/customizer.php:336
+#, fuzzy
+#| msgid "Archive News Categories"
+msgid "Archive News "
+msgstr "Archives nouvelles catégories"
+
+#: inc/customizer.php:337
+msgid "Select the Category for Archive News"
+msgstr "Sélectionnez la catégorie d’actualités des Archives"
+
+#: inc/customizer.php:387 inc/customizer.php:388
+#, fuzzy
+#| msgid "Categories Section"
+msgid "Reorder Sections"
+msgstr "Section catégories"
+
+#: inc/customizer.php:392
+msgid "This feature is available in "
+msgstr "Mise à jour requise non disponible"
+
+#: inc/customizer.php:392 inc/demo-content.php:61
+msgid "Pro Version"
+msgstr "Version Pro"
+
+#: inc/customizer.php:410
+msgid "facebook"
+msgstr "facebook"
+
+#: inc/customizer.php:410
+msgid "twitter"
+msgstr "twitter"
+
+#: inc/customizer.php:410
+msgid "googleplus"
+msgstr "googleplus"
+
+#: inc/customizer.php:410
+msgid "youtube"
+msgstr "youtube"
+
+#: inc/customizer.php:410
+msgid "linkedin"
+msgstr "linkedin"
+
+#: inc/customizer.php:410
+msgid "pinterest"
+msgstr "Pinterest"
+
+#: inc/customizer.php:410
+msgid "instagram"
+msgstr "Instagram"
+
+#: inc/customizer.php:414
+msgid "Social Media"
+msgstr "Médias sociaux"
+
+#: inc/customizer.php:443
+msgid "Post Options"
+msgstr "Options de l'article"
+
+#: inc/customizer.php:455
+msgid "Show Author"
+msgstr "Afficher l’auteur"
+
+#: inc/demo-content.php:35
+msgid "Demo and Documentation"
+msgstr "Démo et la Documentation"
+
+#: inc/demo-content.php:46
+msgid ""
+"Check out step-by-step tutorial to create your website like the demo of "
+"Magazine Newspaper WordPress theme."
+msgstr ""
+"Découvrez le tutoriel étape par étape pour créer votre site Web comme la "
+"démo du Magazine journal WordPress thème."
+
+#: inc/demo-content.php:57
+msgid "Theme Demo"
+msgstr "Assistance"
+
+#: inc/demo-content.php:57 inc/demo-content.php:58 inc/demo-content.php:59
+#: inc/demo-content.php:60 inc/demo-content.php:61
+msgid "Click Here"
+msgstr "Cliquez ici"
+
+#: inc/demo-content.php:58 inc/theme-info/about.php:21
+msgid "Theme Details"
+msgstr "Détails du thème"
+
+#: inc/demo-content.php:59
+msgid "How to use"
+msgstr "Comment utiliser"
+
+#: inc/demo-content.php:60
+msgid "Video Demonstration"
+msgstr "Démonstration vidéo"
+
+#: inc/demo-content.php:63
+msgid "Setup Theme"
+msgstr "Thème par"
+
+#: inc/demo-content.php:63
+msgid "One Click Setup"
+msgstr "Un commentaire"
+
+#: inc/demo/demo.php:18
+#, fuzzy
+#| msgid "Magazine Newspaper"
+msgid "Import Magazine Newspaper Demo"
+msgstr "Magazine Newspaper"
+
+#: inc/demo/demo.php:21
+msgid "It will overwrite your settings"
+msgstr "Il remplacera vos paramètres"
+
+#: inc/template-tags.php:30
+#, php-format
+msgctxt "post date"
+msgid "Posted on %s"
+msgstr "Publié le %s"
+
+#: inc/template-tags.php:35
+#, php-format
+msgctxt "post author"
+msgid "by %s"
+msgstr "par %s"
+
+#. translators: used between list items, there is a space after the comma
+#: inc/template-tags.php:52 inc/template-tags.php:58
+msgid ", "
+msgstr ", "
+
+#: inc/template-tags.php:54
+#, php-format
+msgid "Posted in %1$s"
+msgstr "Publié dans %1$s"
+
+#: inc/template-tags.php:60
+#, php-format
+msgid "Tagged %1$s"
+msgstr "Étiqueté %1$s"
+
+#: inc/template-tags.php:66
+msgid "Leave a comment"
+msgstr "Laisser un commentaire"
+
+#: inc/template-tags.php:66
+msgid "1 Comment"
+msgstr "1 commentaire"
+
+#: inc/template-tags.php:66
+msgid "% Comments"
+msgstr "% Commentaires"
+
+#: inc/template-tags.php:70 no-featureimage.php:35
+#: template-parts/content-page.php:32
+msgid "Edit"
+msgstr "Modifier une formule"
+
+#: inc/theme-info/about.php:9 inc/theme-info/about.php:10
+#, fuzzy
+#| msgid "Magazine Newspaper"
+msgid "Magazine Newspaper Setup"
+msgstr "Magazine Newspaper"
+
+#. translators: theme version
+#: inc/theme-info/about.php:13
+#, php-format
+msgid "Welcome to %s - "
+msgstr "Bienvenue sur %s"
+
+#. translators: 1: theme name
+#: inc/theme-info/about.php:16
+#, php-format
+msgid ""
+"We hope this page will help you to setup %1$s with few clicks. We believe "
+"you will find it easy to use and perfect for your website development."
+msgstr ""
+"Nous espérons que cette page va vous aider à configurer %1$s en quelques "
+"clics. Nous pensons que vous le trouverez facile à utiliser et parfait pour "
+"le développement de votre site Web."
+
+#: inc/theme-info/about.php:25
+msgid "View Demo"
+msgstr "Voir la démo"
+
+#: inc/theme-info/about.php:37
+msgid "Getting Started"
+msgstr "Commencer"
+
+#: inc/theme-info/about.php:38 inc/theme-info/about.php:54
+msgid "Recommended Actions"
+msgstr "Mesures préconisées"
+
+#: inc/theme-info/about.php:39
+msgid "Support"
+msgstr "Support"
+
+#: inc/theme-info/about.php:45 inc/theme-info/about.php:108
+msgid "Theme Documentation"
+msgstr "Documentation du thème"
+
+#: inc/theme-info/about.php:46
+msgid "Find step by step instructions to setup theme easily."
+msgstr ""
+"Trouver des instructions étape par étape pour configurer le thème facilement."
+
+#: inc/theme-info/about.php:47
+msgid "View documentation"
+msgstr "visualiser la documentation"
+
+#: inc/theme-info/about.php:55
+msgid ""
+"We recommend few steps to take so that you can get complete site like shown "
+"in demo."
+msgstr ""
+"Nous vous recommandons quelques étapes à suivre pour que vous puissiez "
+"obtenir le site complet comme montré dans la démo."
+
+#: inc/theme-info/about.php:56
+msgid "Check recommended actions"
+msgstr "Vérifier les actions recommandées"
+
+#: inc/theme-info/about.php:63
+msgid "Customize Everything"
+msgstr "Personnaliser tout"
+
+#: inc/theme-info/about.php:64
+msgid "Start customizing every aspect of the website with customizer."
+msgstr "Commencer à personnaliser tous les aspects du site avec customizer."
+
+#: inc/theme-info/about.php:65
+msgid "Go to Customizer"
+msgstr "Personnaliser maintenant"
+
+#: inc/theme-info/about.php:78
+msgid "Setting Static Front Page"
+msgstr "Définir une page d’accueil statique"
+
+#: inc/theme-info/about.php:79
+msgid ""
+"Create a new page to display on front page ( Ex: Home ) and assign \"Home\" "
+"template. Select A static page then Front page and Posts page to display "
+"front page specific sections. Note: Static page will be set automatically "
+"when you import demo content."
+msgstr ""
+"Créez une nouvelle page à afficher sur la page de couverture (Ex : page "
+"d’accueil) et assignez « Home » de modèle. Sélectionnez une page statique "
+"puis la première page et la page de messages pour afficher les sections "
+"spécifiques de première page. Remarque : La page statique se règlera "
+"automatiquement lorsque vous importez le contenu de la démo."
+
+#: inc/theme-info/about.php:82
+msgid "Static Front Page"
+msgstr "Aucune image"
+
+#: inc/theme-info/about.php:86
+msgid "One Click Demo Import"
+msgstr "Importation de démo en 1 clic"
+
+#: inc/theme-info/about.php:87
+msgid ""
+"Please install the One Click Demo Import plugin to import the demo content. "
+"After activation go to Appearance >> Import Demo Data and import it."
+msgstr ""
+"Veuillez installer le plugin un Demo cliquez sur Importer pour importer le "
+"contenu de la démo. Après l’activation allez dans apparence >> importer des "
+"données de démonstration et l’importer."
+
+#: inc/theme-info/about.php:99 inc/theme-info/about.php:102
+msgid "Contact Support"
+msgstr "Contacter le support"
+
+#: inc/theme-info/about.php:101
+msgid ""
+"If you have any problem, feel free to create ticket on our dedicated Support "
+"forum."
+msgstr ""
+"Si vous avez un problème, n’hésitez pas à créer le ticket sur notre forum de "
+"Support dédié."
+
+#: inc/theme-info/about.php:110
+msgid ""
+"Kindly check our theme documentation for detailed information and video "
+"instructions."
+msgstr ""
+"Veuillez consulter notre documentation sur les thèmes pour des informations "
+"détaillées et des instructions vidéo."
+
+#: inc/theme-info/about.php:111
+msgid "View Documentation"
+msgstr "Consulter la documentation"
+
+#: inc/theme-info/class-about.php:164
+#, php-format
+msgid ""
+"Welcome! Thank you for choosing %1$s! To fully take advantage of the best "
+"our theme can offer please make sure you visit our %2$swelcome page%3$s."
+msgstr ""
+"Bienvenue ! Merci d’avoir choisi  %1$s ! Pour tirer pleinement parti du "
+"meilleur que notre thème peut offrir, visitez notre %2$spage d’accueil%3$s."
+
+#: inc/theme-info/class-about.php:164
+#, php-format
+msgid "Get started with %s"
+msgstr "Commencez avec%s"
+
+#: inc/theme-info/class-about.php:561
+msgid "Install"
+msgstr "Installer"
+
+#: inc/theme-info/class-about.php:565
+msgid "Activate"
+msgstr "Activer"
+
+#: inc/theme-info/class-about.php:569
+msgid "Deactivate"
+msgstr "Désactiver"
+
+#: inc/widgets/widgets.php:13
+msgid "Right Sidebar 1"
+msgstr "Barre latérale droite #1"
+
+#: inc/widgets/widgets.php:23
+msgid "Right Sidebar 2"
+msgstr "Barre latérale droite 2"
+
+#: inc/widgets/widgets.php:33
+msgid "Footer Widget"
+msgstr "Widget de Pied-de-page"
+
+#: inc/woocommerce-functions.php:55
+msgid "Shop Sidebar"
+msgstr "Barre latérale de la boutique"
+
+#: inc/woocommerce-functions.php:57
+msgid "Sidebar displaying only in woocommerce pages."
+msgstr "Barre latérale afficher uniquement dans les pages de woocommerce."
+
+#: no-featureimage.php:26 template-parts/content-page.php:23
+#: template-parts/content-single.php:44
+msgid "Pages:"
+msgstr "Pages:"
+
+#: search.php:16
+#, php-format
+msgid "Search Results for: %s"
+msgstr "Résultats de la recherche pour : \"%s\""
+
+#: template-parts/content-blogs.php:16 template-parts/content-single.php:28
+msgid "zero comment"
+msgstr "zéro commentaire"
+
+#: template-parts/content-blogs.php:16 template-parts/content-single.php:28
+msgid "one comment"
+msgstr "Un commentaire"
+
+#: template-parts/content-blogs.php:16
+msgid "comments"
+msgstr "commentaires"
+
+#: template-parts/content-blogs.php:36 template-parts/content.php:26
+msgid "Read More"
+msgstr "Lire la suite"
+
+#: template-parts/content-none.php:17
+msgid "Nothing Found."
+msgstr "Rien n'a été trouvé."
+
+#: template-parts/content-none.php:25
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+"Prêt à publier votre premier article ? <a href=\"%1$s\">Commencez ici</a>."
+
+#: template-parts/content-none.php:29
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+"Désolé, mais rien ne correspond à vos termes de recherche. Veuillez "
+"réessayer avec d'autres mots-clés."
+
+#: template-parts/content-none.php:34
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+"Il semble que ce que vous cherchez est introuvable. Essayez une autre "
+"recherche."
+
+#: template-parts/content-single.php:28
+#, php-format
+msgid "% comments"
+msgstr "% commentaires"
+
+#. Theme Name of the plugin/theme
+#: trt-customize-pro/magazine-newspaper/class-customize.php:76
+msgid "Magazine Newspaper"
+msgstr "Magazine Newspaper"
+
+#. Theme URI of the plugin/theme
+msgid ""
+"https://thebootstrapthemes.com/downloads/free-magazine-newspaper-wordpress-"
+"theme/"
+msgstr ""
+"https://thebootstrapthemes.com/downloads/free-magazine-newspaper-wordpress-"
+"theme/"
+
+#. Author of the plugin/theme
+msgid "thebootstrapthemes"
+msgstr "thebootstrapthemes"
+
+#. Author URI of the plugin/theme
+msgid "http://thebootstrapthemes.com"
+msgstr "http://thebootstrapthemes.com"
+
+#~ msgid "Select"
+#~ msgstr "Séléctionner"
+
+#~ msgid "Breaking News Categories"
+#~ msgstr "Dernière information - Catégories"
+
+#~ msgid "Banner News Categories"
+#~ msgstr "Bannière nouvelles catégories"
+
+#~ msgid "Social Info"
+#~ msgstr "Information des réseaux sociaux"
+
+#~ msgid "Install Required Plugins"
+#~ msgstr "Installer les extensions requises"
+
+#~ msgid "Install Plugins"
+#~ msgstr "Installer les extensions"
+
+#~ msgid "Installing Plugin: %s"
+#~ msgstr "Installation de l'extension : %s"
+
+#~ msgid "Updating Plugin: %s"
+#~ msgstr "Mise à jour de l'extension : %s"
+
+#~ msgid "Something went wrong with the plugin API."
+#~ msgstr "Une erreur s'est produite avec l'API du plugin."
+
+#, fuzzy
+#~ msgid "This theme requires the following plugin: %1$s."
+#~ msgid_plural "This theme requires the following plugins: %1$s."
+#~ msgstr[0] "Ce thème nécessite l’extension suivante : %1$s."
+#~ msgstr[1] ""
+
+#, fuzzy
+#~ msgid "This theme recommends the following plugin: %1$s."
+#~ msgid_plural "This theme recommends the following plugins: %1$s."
+#~ msgstr[0] "Ce thème recommande l’extension suivante : %1$s."
+#~ msgstr[1] ""
+
+#, fuzzy
+#~ msgid ""
+#~ "The following plugin needs to be updated to its latest version to ensure "
+#~ "maximum compatibility with this theme: %1$s."
+#~ msgid_plural ""
+#~ "The following plugins need to be updated to their latest version to "
+#~ "ensure maximum compatibility with this theme: %1$s."
+#~ msgstr[0] ""
+#~ "L’extensions suivante doit être mise à jour vers sa dernière version afin "
+#~ "d’assurer une compatibilité maximale avec ce thème : %1$s."
+#~ msgstr[1] ""
+
+#, fuzzy
+#~ msgid "There is an update available for: %1$s."
+#~ msgid_plural "There are updates available for the following plugins: %1$s."
+#~ msgstr[0] "Une mise à jour est disponible pour: %1$s."
+#~ msgstr[1] ""
+
+#, fuzzy
+#~ msgid "The following required plugin is currently inactive: %1$s."
+#~ msgid_plural "The following required plugins are currently inactive: %1$s."
+#~ msgstr[0] "L’extension requise suivante est actuellement inactive : %1$s."
+#~ msgstr[1] ""
+
+#, fuzzy
+#~ msgid "The following recommended plugin is currently inactive: %1$s."
+#~ msgid_plural ""
+#~ "The following recommended plugins are currently inactive: %1$s."
+#~ msgstr[0] ""
+#~ "L’extension recommandée suivante est actuellement inactive :%1$s."
+#~ msgstr[1] ""
+
+#~ msgid "Begin installing plugin"
+#~ msgid_plural "Begin installing plugins"
+#~ msgstr[0] "Commencer l’installation de l’extention"
+#~ msgstr[1] ""
+
+#~ msgid "Begin updating plugin"
+#~ msgid_plural "Begin updating plugins"
+#~ msgstr[0] "Commencer la mise à jour de l’extension"
+#~ msgstr[1] ""
+
+#~ msgid "Begin activating plugin"
+#~ msgid_plural "Begin activating plugins"
+#~ msgstr[0] "Commencer l’activation de l’extension"
+#~ msgstr[1] ""
+
+#~ msgid "Return to Required Plugins Installer"
+#~ msgstr "Retourner à l'installateur de plugins requis"
+
+#~ msgid "Return to the Dashboard"
+#~ msgstr "Retour au Tableau de bord"
+
+#~ msgid "Plugin activated successfully."
+#~ msgstr "Extension activée avec succès."
+
+#~ msgid "The following plugin was activated successfully:"
+#~ msgid_plural "The following plugins were activated successfully:"
+#~ msgstr[0] "L&rsquo;extension suivante a été activée avec succès&nbsp;:"
+#~ msgstr[1] ""
+
+#~ msgid "No action taken. Plugin %1$s was already active."
+#~ msgstr "Aucune mesure prise. L'extension %1$s était déjà active."
+
+#~ msgid ""
+#~ "Plugin not activated. A higher version of %s is needed for this theme. "
+#~ "Please update the plugin."
+#~ msgstr ""
+#~ "Le plugin n’est pas activée. Une version plus récente de %s est "
+#~ "nécessaire pour ce thème. Veuillez mettre à jour le plugin."
+
+#~ msgid "All plugins installed and activated successfully. %1$s"
+#~ msgstr ""
+#~ "Toutes les extensions ont été installées et activées avec succès. %1$s"
+
+#~ msgid "Dismiss this notice"
+#~ msgstr "Ignorer cet avertissement"
+
+#~ msgid ""
+#~ "There are one or more required or recommended plugins to install, update "
+#~ "or activate."
+#~ msgstr ""
+#~ "Il existe un ou plusieurs plugins requis ou recommandés pour installer, "
+#~ "mettre à jour ou activer."
+
+#~ msgid "Please contact the administrator of this site for help."
+#~ msgstr "Veuillez contacter l’administrateur du site pour obtenir de l’aide."
+
+#~ msgid "This plugin needs to be updated to be compatible with your theme."
+#~ msgstr ""
+#~ "Cette extension a besoin d’être mise à jour pour être compatible avec "
+#~ "votre thème."
+
+#~ msgid "Update Required"
+#~ msgstr "Mise à jour requise"
+
+#~ msgid ""
+#~ "The remote plugin package does not contain a folder with the desired slug "
+#~ "and renaming did not work."
+#~ msgstr ""
+#~ "Le package de plugin distant ne contient pas de dossier avec le slug "
+#~ "souhaité et le renommage n'a pas fonctionné."
+
+#~ msgid ""
+#~ "Please contact the plugin provider and ask them to package their plugin "
+#~ "according to the WordPress guidelines."
+#~ msgstr ""
+#~ "Veuillez contacter le fournisseur de l'extension et demandez-lui de "
+#~ "conditionner son extension selon les lignes directrices de WordPress."
+
+#~ msgid ""
+#~ "The remote plugin package consists of more than one file, but the files "
+#~ "are not packaged in a folder."
+#~ msgstr ""
+#~ "Le package de plugin distant se compose de plusieurs fichiers, mais les "
+#~ "fichiers ne sont pas emballés dans un dossier."
+
+#~ msgctxt "plugin A *and* plugin B"
+#~ msgid "and"
+#~ msgstr "et"
+
+#~ msgid "TGMPA v%s"
+#~ msgstr "TGMPA v%s"
+
+#~ msgid "Required"
+#~ msgstr "Requis"
+
+#~ msgid "WordPress Repository"
+#~ msgstr "Dépôt WordPress"
+
+#~ msgid "External Source"
+#~ msgstr "Source externe"
+
+#~ msgid "Pre-Packaged"
+#~ msgstr "Pre-Packaged"
+
+#~ msgid "Not Installed"
+#~ msgstr "Non installé"
+
+#~ msgid "Installed But Not Activated"
+#~ msgstr "Installé mais non activé"
+
+#~ msgid "Active"
+#~ msgstr "Actif"
+
+#~ msgid "Required Update not Available"
+#~ msgstr "Mise à jour requise non disponible"
+
+#~ msgid "Requires Update"
+#~ msgstr "Nécessite une mise à jour"
+
+#~ msgctxt "Install/Update Status"
+#~ msgid "%1$s, %2$s"
+#~ msgstr "%1$s, %2$s"
+
+#, fuzzy
+#~ msgctxt "plugins"
+#~ msgid "All <span class=\"count\">(%s)</span>"
+#~ msgid_plural "All <span class=\"count\">(%s)</span>"
+#~ msgstr[0] "Tout <span class=\"count\">(%s)</span>"
+#~ msgstr[1] ""
+
+#, fuzzy
+#~ msgid "To Install <span class=\"count\">(%s)</span>"
+#~ msgid_plural "To Install <span class=\"count\">(%s)</span>"
+#~ msgstr[0] "Installer <span class=\"count\">(%s)</span>"
+#~ msgstr[1] ""
+
+#, fuzzy
+#~ msgid "Update Available <span class=\"count\">(%s)</span>"
+#~ msgid_plural "Update Available <span class=\"count\">(%s)</span>"
+#~ msgstr[0] "Mise à jour disponible <span class=« count »>(%s)</span>"
+#~ msgstr[1] ""
+
+#, fuzzy
+#~ msgid "To Activate <span class=\"count\">(%s)</span>"
+#~ msgid_plural "To Activate <span class=\"count\">(%s)</span>"
+#~ msgstr[0] "Activer <span class=\"count\">(%s)</span>"
+#~ msgstr[1] ""
+
+#~ msgctxt "as in: \"version nr unknown\""
+#~ msgid "unknown"
+#~ msgstr "inconnu"
+
+#~ msgid "Installed version:"
+#~ msgstr "Version installée :"
+
+#~ msgid "Minimum required version:"
+#~ msgstr "Version minimum requise :"
+
+#~ msgid "Available version:"
+#~ msgstr "Version disponible :"
+
+#~ msgid "No plugins to install, update or activate."
+#~ msgstr "Pas de plugins à installer, à mettre à jour ou à activer."
+
+#~ msgid "Plugin"
+#~ msgstr "Extension"
+
+#~ msgid "Source"
+#~ msgstr "Source"
+
+#~ msgid "Type"
+#~ msgstr "Type"
+
+#~ msgid "Status"
+#~ msgstr "Statut"
+
+#~ msgid "Install %2$s"
+#~ msgstr "Installer %2$s"
+
+#~ msgid "Update %2$s"
+#~ msgstr "Mettre à jour %2$s"
+
+#~ msgid "Activate %2$s"
+#~ msgstr "Activer %2$s"
+
+#~ msgid "Upgrade message from the plugin author:"
+#~ msgstr "Message de mise à niveau de l’auteur de l’extension :"
+
+#~ msgid "Update"
+#~ msgstr "Mettre à jour"
+
+#~ msgid "No plugins were selected to be installed. No action taken."
+#~ msgstr ""
+#~ "Aucune extension n’a été sélectionnée pour être installée. Aucune mesure "
+#~ "prise."
+
+#~ msgid "No plugins were selected to be updated. No action taken."
+#~ msgstr ""
+#~ "Aucune extension n’a été sélectionnée pour être mise à jour. Aucune "
+#~ "mesure prise."
+
+#~ msgid "No plugins are available to be installed at this time."
+#~ msgstr ""
+#~ "Aucune extension n’est disponible pour être installée pour le moment."
+
+#~ msgid "No plugins are available to be updated at this time."
+#~ msgstr "Aucunes extensions ne peuvent être mises à jour pour l'instant."
+
+#~ msgid "No plugins were selected to be activated. No action taken."
+#~ msgstr ""
+#~ "Aucune extension n’a été sélectionnée pour être activée. Aucune mesure "
+#~ "n'a été prise."
+
+#~ msgid "No plugins are available to be activated at this time."
+#~ msgstr "Aucune extension n'est disponible pour être activée en ce moment."
+
+#~ msgid "Plugin activation failed."
+#~ msgstr "L’activation du plugin a échoué."
+
+#~ msgid "Updating Plugin %1$s (%2$d/%3$d)"
+#~ msgstr "Mise à jour de l’extension %1$s (%2$d/%3$d)"
+
+#~ msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+#~ msgstr ""
+#~ "Une erreur est survenue lors de l’installation %1$s: <strong>%2$s</"
+#~ "strong>."
+
+#~ msgid "The installation of %1$s failed."
+#~ msgstr "L'installation de %1$s a échoué."
+
+#~ msgid ""
+#~ "The installation and activation process is starting. This process may "
+#~ "take a while on some hosts, so please be patient."
+#~ msgstr ""
+#~ "Le processus d’installation et d’activation commence… Ce processus peut "
+#~ "prendre un certain temps sur certains serveurs, soyez patients."
+
+#~ msgid "%1$s installed and activated successfully."
+#~ msgstr "%1$s installé et activé avec succès."
+
+#~ msgid "Show Details"
+#~ msgstr "Afficher les détails"
+
+#~ msgid "Hide Details"
+#~ msgstr "Masquer les détails"
+
+#~ msgid "All installations and activations have been completed."
+#~ msgstr "Toutes les installations et activations ont été effectuées."
+
+#~ msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+#~ msgstr "Installation et activation du plugin %1$s (%2$d/%3$d)"
+
+#~ msgid ""
+#~ "The installation process is starting. This process may take a while on "
+#~ "some hosts, so please be patient."
+#~ msgstr ""
+#~ "Le processus d’installation et d’activation commence. Ce processus peut "
+#~ "prendre un certain temps sur certains serveurs, soyez patients."
+
+#~ msgid "%1$s installed successfully."
+#~ msgstr "%1$s installé avec succès."
+
+#~ msgid "All installations have been completed."
+#~ msgstr "Toutes les installations sont terminées."
+
+#~ msgid "Installing Plugin %1$s (%2$d/%3$d)"
+#~ msgstr "Installation du plugin %1$s (%2$d/%3$d)"
+
+#~ msgid "AddThis Social Sharing"
+#~ msgstr "Ajouter le bouton de partage social"

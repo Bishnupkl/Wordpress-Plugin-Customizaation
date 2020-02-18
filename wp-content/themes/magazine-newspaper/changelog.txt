@@ -1,0 +1,178 @@
+= Changelog =
+
+Tested up to: 5.0.2
+
+
+= Version 2.1.0 =
+
+Release Date: Jan 08, 2019
+
+i) Customizer custom controls are grouped.
+ii)  Customizer custom control settings are modified.
+iii) Demo import fixed for importing menus.
+
+
+= Version 2.0.7 =
+
+Release Date: Oct 11, 2018
+
+i)  Footer Updated
+
+
+= Version 2.0.6 =
+
+Release Date: March 13, 2018
+
+i)  Language Added for transalation 
+
+
+
+= Version 2.0.5 =
+
+Release Date: March 13, 2018
+
+i)  Option to show/hide author block
+
+
+
+= Version 2.0.4 =
+
+Release Date: March 8, 2018
+
+i)  RTL compatibility issue fixed
+
+
+
+= Version 2.0.3=
+
+Release Date: February 27, 2018
+
+i)  TopNews Slider issue fixed.
+
+
+
+= Version 2.0.2=
+
+Release Date: February 26, 2018
+
+i)  Sidebar widget css fixed.
+ii) Youtube link for theme installation 
+
+
+= Version 2.0.1 =
+
+Release Date: February 23, 2018
+
+i)  Customizers Section re-arranged
+ii) One Click theme setup
+
+
+
+= Version 2.0.0 =
+
+Release Date: February 20, 2018
+
+i)  Sidebar update
+
+
+
+
+= Version 1.0.9 =
+
+Release Date: February 20, 2018
+
+i)   Default images kept if not post thumbnail.
+ii)  Banner News offset removed and archive news offset set depending on banner news in index.php
+
+
+
+= Version 1.0.8 =
+
+Release Date: February 15, 2018
+
+i)   Removed demo-content file and breadcrumbs
+ii)  Subject tag limited to 3.
+iii) licening text for fontawesome.
+iv)  Image size prefixed added
+v)	 Font awesome handler name
+vi)  removed screenshot from trt-customize-pro
+vii) .pot file created
+
+
+
+
+
+
+= Version 1.0.7 =
+
+Release Date: February 9, 2018
+
+i)   Removed popular post, popular-news.php
+ii)  Function prefixing fixed and unwanted functions removed.
+
+
+
+
+= Version 1.0.6 =
+
+Release Date: February 9, 2018
+
+i)   Escpaing issue fixed
+
+
+
+
+= Version 1.0.5 =
+
+Release Date: February 9, 2018
+
+i)   Strings are made translatable ready
+ii)	 Removed helper-functions.php and most popular widget items
+iii) Replaced jquery.vticker.min.js with vticker.js
+iv)	 escpaing issue fixed in other pages
+
+
+
+
+= Version 1.0.4 =
+
+Release Date: February 6, 2018
+
+i) Escaping issue fixed
+ii)	Overwriting global variable removed
+
+
+= Version 1.0.3 =
+
+Release Date: February 2, 2018
+
+i) Breadcrumb issue fixed in homepage
+
+
+
+= Version 1.0.2 =
+
+Release Date: Jan 20, 2018
+
+i) Mobile Version Optimisation
+
+
+
+= Version 1.0.1 =
+
+Release Date: January 18, 2018
+
+i) Breadcrumb added in all pages
+ii) Multi sidebar in homepage
+iii) Breaking News section
+iv)	 Popular news section
+v)	Author snippet in post.
+
+
+
+
+= Version 1.0.0 =
+
+Release Date: November 25, 2017
+
+i) Intial version Release

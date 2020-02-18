@@ -1,0 +1,584 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Magazine Newspaper\n"
+"POT-Creation-Date: 2018-03-18 22:12+0545\n"
+"PO-Revision-Date: 2018-03-19 00:13+0545\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.6\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: style.css\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: 404.php:14
+msgid "Oops! That page can&rsquo;t be found."
+msgstr "お探しのページが見つかりません。"
+
+#: 404.php:21
+msgid ""
+"It looks like nothing was found at this location. Maybe try one of the links "
+"below or a search?"
+msgstr ""
+"お探しのページが見つかりませんでした。検索してみると良いかもしれません。?"
+
+#. translators: %s: post title
+#: comments.php:29
+#, fuzzy, php-format
+msgctxt "comments title"
+msgid "One thought on &ldquo;%s&rdquo;"
+msgstr "「％s」の意見"
+
+#: comments.php:31
+#, php-format
+msgctxt "comments title"
+msgid "%1$s thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] "%1$s\"%2$s\"についての考え"
+
+#: comments.php:41 comments.php:62
+msgid "Comment navigation"
+msgstr "コメントナビゲーション"
+
+#: comments.php:44 comments.php:65
+msgid "Older Comments"
+msgstr "以前のコメント"
+
+#: comments.php:45 comments.php:66
+msgid "Newer Comments"
+msgstr "新しいコメント"
+
+#: comments.php:78
+msgid "Comments are closed."
+msgstr "コメントは受け付けていません。"
+
+#: footer.php:17
+msgid "Powered by"
+msgstr "Powered by"
+
+#: footer.php:17
+msgid "WordPress"
+msgstr "WordPress"
+
+#: footer.php:17
+msgid "Theme by"
+msgstr "テーマ制作"
+
+#: footer.php:17
+msgid "The Bootstrap Themes"
+msgstr "ブートス トラップのテーマ"
+
+#: functions.php:45
+msgid "Top Menu"
+msgstr "トップメニュー"
+
+#: functions.php:46
+msgid "Primary Menu"
+msgstr "メインメニュー"
+
+#: header.php:83
+msgid "Toggle navigation"
+msgstr "ナビゲーションを切り替え"
+
+#: inc/class.php:43
+msgid "Recent Posts"
+msgstr "最近の投稿"
+
+#: inc/customizer.php:26
+msgid "Colors and Fonts"
+msgstr "色とフォントComment"
+
+#: inc/customizer.php:51 inc/theme-info/about.php:29
+#: inc/theme-info/class-about.php:603
+#: trt-customize-pro/magazine-newspaper/class-customize.php:77
+msgid "Upgrade to Pro"
+msgstr "Proバージョンにアップグレード"
+
+#: inc/customizer.php:54
+msgid " for more color and font options"
+msgstr "他の色とフォントのオプション"
+
+#: inc/customizer.php:68
+msgid "Header / Banner"
+msgstr "ヘッダー/バナー"
+
+#: inc/customizer.php:72 inc/customizer.php:73
+msgid "Magazine Newspaper Options"
+msgstr "Magazine Newspaper Options"
+
+#: inc/customizer.php:88
+msgid "Breaking News "
+msgstr "最新ニュース "
+
+#: inc/customizer.php:89
+msgid "Select the Category for Breaking News"
+msgstr "ニュース速報にカテゴリを選択します。"
+
+#: inc/customizer.php:99 inc/customizer.php:148 inc/customizer.php:197
+#: inc/customizer.php:245 inc/customizer.php:294 inc/customizer.php:347
+msgid "Display?"
+msgstr "表示する？"
+
+#: inc/customizer.php:108
+msgid "Breaking News"
+msgstr "オススメ記事"
+
+#: inc/customizer.php:112 inc/customizer.php:161 inc/customizer.php:209
+#: inc/customizer.php:258 inc/customizer.php:360
+msgid "Title"
+msgstr "タイトル"
+
+#: inc/customizer.php:124 inc/customizer.php:173 inc/customizer.php:372
+msgid "Choose category"
+msgstr "カテゴリを選択"
+
+#: inc/customizer.php:137
+msgid "Top News "
+msgstr "トップ ニュース "
+
+#: inc/customizer.php:138
+msgid "Select the Category for Top News"
+msgstr "トップ ニュースのカテゴリを選択します。"
+
+#: inc/customizer.php:186
+msgid "Slider / Banner News "
+msgstr "スライダー/バナー ニュース "
+
+#: inc/customizer.php:187
+msgid "Select the Category for Banner News"
+msgstr "バナーのニュース カテゴリを選択します。"
+
+#: inc/customizer.php:221 inc/customizer.php:270 inc/customizer.php:321
+msgid "Choose Category"
+msgstr "カテゴリーを選択"
+
+#: inc/customizer.php:234
+msgid "Recent News "
+msgstr "最新ニュース "
+
+#: inc/customizer.php:235 inc/customizer.php:284
+msgid "Select the Category for Recent News"
+msgstr "最近のニュースのカテゴリを選択します。"
+
+#: inc/customizer.php:283
+msgid "Category News"
+msgstr "カテゴリー"
+
+#: inc/customizer.php:309
+msgid "Category Title"
+msgstr "カテゴリータイトル"
+
+#: inc/customizer.php:336
+msgid "Archive News "
+msgstr "有効 "
+
+#: inc/customizer.php:337
+msgid "Select the Category for Archive News"
+msgstr "アーカイブ ニュースのカテゴリを選択します。"
+
+#: inc/customizer.php:387 inc/customizer.php:388
+msgid "Reorder Sections"
+msgstr "セクションの順序を変更します。"
+
+#: inc/customizer.php:392
+msgid "This feature is available in "
+msgstr "この機能で利用可能です。 "
+
+#: inc/customizer.php:392 inc/demo-content.php:61
+msgid "Pro Version"
+msgstr "プロ版"
+
+#: inc/customizer.php:410
+msgid "facebook"
+msgstr "facebook"
+
+#: inc/customizer.php:410
+msgid "twitter"
+msgstr "twitter"
+
+#: inc/customizer.php:410
+msgid "googleplus"
+msgstr "googleplus"
+
+#: inc/customizer.php:410
+msgid "youtube"
+msgstr "youtube"
+
+#: inc/customizer.php:410
+msgid "linkedin"
+msgstr "linkedin"
+
+#: inc/customizer.php:410
+msgid "pinterest"
+msgstr "pinterest"
+
+#: inc/customizer.php:410
+msgid "instagram"
+msgstr "instagram"
+
+#: inc/customizer.php:414
+msgid "Social Media"
+msgstr "ソーシャルメディア"
+
+#: inc/customizer.php:443
+msgid "Post Options"
+msgstr "ポストオプション"
+
+#: inc/customizer.php:455
+msgid "Show Author"
+msgstr "投稿者を表示"
+
+#: inc/demo-content.php:35
+msgid "Demo and Documentation"
+msgstr "デモやドキュメント"
+
+#: inc/demo-content.php:46
+msgid ""
+"Check out step-by-step tutorial to create your website like the demo of "
+"Magazine Newspaper WordPress theme."
+msgstr ""
+"雑誌新聞ワードプレスのテーマのデモのようなあなたのウェブサイトを作成するス"
+"テップ バイ ステップのチュートリアルをチェック アウトします。"
+
+#: inc/demo-content.php:57
+msgid "Theme Demo"
+msgstr "テーマのデモ"
+
+#: inc/demo-content.php:57 inc/demo-content.php:58 inc/demo-content.php:59
+#: inc/demo-content.php:60 inc/demo-content.php:61
+msgid "Click Here"
+msgstr "ここをクリック"
+
+#: inc/demo-content.php:58 inc/theme-info/about.php:21
+msgid "Theme Details"
+msgstr "デスクトップテーマの詳細"
+
+#: inc/demo-content.php:59
+msgid "How to use"
+msgstr "使い方"
+
+#: inc/demo-content.php:60
+msgid "Video Demonstration"
+msgstr "デモビデオ"
+
+#: inc/demo-content.php:63
+msgid "Setup Theme"
+msgstr "セットアップのテーマ"
+
+#: inc/demo-content.php:63
+msgid "One Click Setup"
+msgstr "ワンクリックインストールとセットアップ"
+
+#: inc/demo/demo.php:18
+msgid "Import Magazine Newspaper Demo"
+msgstr ""
+
+#: inc/demo/demo.php:21
+msgid "It will overwrite your settings"
+msgstr "あなたの設定が上書きされます"
+
+#: inc/template-tags.php:30
+#, php-format
+msgctxt "post date"
+msgid "Posted on %s"
+msgstr "投稿日時: %s"
+
+#: inc/template-tags.php:35
+#, php-format
+msgctxt "post author"
+msgid "by %s"
+msgstr "%s"
+
+#. translators: used between list items, there is a space after the comma
+#: inc/template-tags.php:52 inc/template-tags.php:58
+msgid ", "
+msgstr ", "
+
+#: inc/template-tags.php:54
+#, php-format
+msgid "Posted in %1$s"
+msgstr "投稿者:%1$s"
+
+#: inc/template-tags.php:60
+#, php-format
+msgid "Tagged %1$s"
+msgstr "タグ %1$s"
+
+#: inc/template-tags.php:66
+msgid "Leave a comment"
+msgstr "コメントを残す"
+
+#: inc/template-tags.php:66
+msgid "1 Comment"
+msgstr "1件のコメント"
+
+#: inc/template-tags.php:66
+msgid "% Comments"
+msgstr "% 件のコメント"
+
+#: inc/template-tags.php:70 no-featureimage.php:35
+#: template-parts/content-page.php:32
+msgid "Edit"
+msgstr "編集"
+
+#: inc/theme-info/about.php:9 inc/theme-info/about.php:10
+msgid "Magazine Newspaper Setup"
+msgstr "Magazine Newspaper"
+
+#. translators: theme version
+#: inc/theme-info/about.php:13
+#, php-format
+msgid "Welcome to %s - "
+msgstr "へようこそ%s - "
+
+#. translators: 1: theme name
+#: inc/theme-info/about.php:16
+#, php-format
+msgid ""
+"We hope this page will help you to setup %1$s with few clicks. We believe "
+"you will find it easy to use and perfect for your website development."
+msgstr ""
+"我々 は、このページは、数回クリックすると %1$s をセットアップに役立ちます願っ"
+"ています。それを見つけるあなたのウェブサイトの開発に最適な使いやすいと考えて"
+"います。"
+
+#: inc/theme-info/about.php:25
+msgid "View Demo"
+msgstr "デモを見る"
+
+#: inc/theme-info/about.php:37
+msgid "Getting Started"
+msgstr "はじめに"
+
+#: inc/theme-info/about.php:38 inc/theme-info/about.php:54
+msgid "Recommended Actions"
+msgstr "おすすめアクション"
+
+#: inc/theme-info/about.php:39
+msgid "Support"
+msgstr "サポート"
+
+#: inc/theme-info/about.php:45 inc/theme-info/about.php:108
+msgid "Theme Documentation"
+msgstr "テーマドキュメンテーション"
+
+#: inc/theme-info/about.php:46
+msgid "Find step by step instructions to setup theme easily."
+msgstr "セットアップのテーマにステップバイ ステップの手順を簡単に見つけます。"
+
+#: inc/theme-info/about.php:47
+msgid "View documentation"
+msgstr "ドキュメンテーションを表示"
+
+#: inc/theme-info/about.php:55
+msgid ""
+"We recommend few steps to take so that you can get complete site like shown "
+"in demo."
+msgstr ""
+"デモに示すような完全なサイトを手に入れるためには、いくつかの手順を実行するこ"
+"とをお勧めします。"
+
+#: inc/theme-info/about.php:56
+msgid "Check recommended actions"
+msgstr "推奨アクションを確認する"
+
+#: inc/theme-info/about.php:63
+msgid "Customize Everything"
+msgstr "すべてをカスタマイズ"
+
+#: inc/theme-info/about.php:64
+msgid "Start customizing every aspect of the website with customizer."
+msgstr "カスタマイザーのウェブサイトのすべての側面をカスタマイズを開始します。"
+
+#: inc/theme-info/about.php:65
+msgid "Go to Customizer"
+msgstr "カスタマイザーへ移動"
+
+#: inc/theme-info/about.php:78
+msgid "Setting Static Front Page"
+msgstr "静的なフロントページの設定"
+
+#: inc/theme-info/about.php:79
+msgid ""
+"Create a new page to display on front page ( Ex: Home ) and assign \"Home\" "
+"template. Select A static page then Front page and Posts page to display "
+"front page specific sections. Note: Static page will be set automatically "
+"when you import demo content."
+msgstr ""
+"フロントページ（例：ホーム）に表示する新しいページを作成し、「ホーム」テンプ"
+"レートを割り当てます。 「静的ページ」→「フロントページ」と「ポスト」ページを"
+"選択すると、フロントページ固有のセクションが表示されます。注：デモコンテンツ"
+"をインポートすると、静的ページが自動的に設定されます。"
+
+#: inc/theme-info/about.php:82
+msgid "Static Front Page"
+msgstr "静的なフロントページ"
+
+#: inc/theme-info/about.php:86
+msgid "One Click Demo Import"
+msgstr "ワンクリックデモインポート"
+
+#: inc/theme-info/about.php:87
+msgid ""
+"Please install the One Click Demo Import plugin to import the demo content. "
+"After activation go to Appearance >> Import Demo Data and import it."
+msgstr ""
+"デモコンテンツをインポートするにはワンクリックデモインポートプラグインをイン"
+"ストールしてください。アクティベーション後、「外観」>>「デモデータのインポー"
+"ト」に移動してインポートします。"
+
+#: inc/theme-info/about.php:99 inc/theme-info/about.php:102
+msgid "Contact Support"
+msgstr "サポートに問い合わせる"
+
+#: inc/theme-info/about.php:101
+msgid ""
+"If you have any problem, feel free to create ticket on our dedicated Support "
+"forum."
+msgstr ""
+"何か問題がある場合は、専用サポートフォーラムでチケットを作成してください。"
+
+#: inc/theme-info/about.php:110
+msgid ""
+"Kindly check our theme documentation for detailed information and video "
+"instructions."
+msgstr ""
+"詳細な情報とビデオの指示については、テーマのドキュメントを確認してください。"
+
+#: inc/theme-info/about.php:111
+msgid "View Documentation"
+msgstr "ドキュメンテーションを表示"
+
+#: inc/theme-info/class-about.php:164
+#, fuzzy, php-format
+msgid ""
+"Welcome! Thank you for choosing %1$s! To fully take advantage of the best "
+"our theme can offer please make sure you visit our %2$swelcome page%3$s."
+msgstr ""
+"%1$s をインストールいただきありがとうございます。<a href=\"%2$s\">テーマの設"
+"定ページ</a>を開き、機能を最大限にご活用ください"
+
+#: inc/theme-info/class-about.php:164
+#, php-format
+msgid "Get started with %s"
+msgstr "%s を利用開始"
+
+#: inc/theme-info/class-about.php:561
+msgid "Install"
+msgstr "インストール"
+
+#: inc/theme-info/class-about.php:565
+msgid "Activate"
+msgstr "有効化"
+
+#: inc/theme-info/class-about.php:569
+msgid "Deactivate"
+msgstr "無効化"
+
+#: inc/widgets/widgets.php:13
+msgid "Right Sidebar 1"
+msgstr "右サイドバー 1"
+
+#: inc/widgets/widgets.php:23
+msgid "Right Sidebar 2"
+msgstr "右サイドバー2"
+
+#: inc/widgets/widgets.php:33
+msgid "Footer Widget"
+msgstr "フッターのウィジェット"
+
+#: inc/woocommerce-functions.php:55
+msgid "Shop Sidebar"
+msgstr "ショップサイドバー"
+
+#: inc/woocommerce-functions.php:57
+msgid "Sidebar displaying only in woocommerce pages."
+msgstr "Woocommerce 製品一覧のページに使用するレイアウトを選択します。"
+
+#: no-featureimage.php:26 template-parts/content-page.php:23
+#: template-parts/content-single.php:44
+msgid "Pages:"
+msgstr "ページ:"
+
+#: search.php:16
+#, php-format
+msgid "Search Results for: %s"
+msgstr "検索結果: %s"
+
+#: template-parts/content-blogs.php:16 template-parts/content-single.php:28
+msgid "zero comment"
+msgstr "ゼロコメント"
+
+#: template-parts/content-blogs.php:16 template-parts/content-single.php:28
+msgid "one comment"
+msgstr "1 件のコメント"
+
+#: template-parts/content-blogs.php:16
+msgid "comments"
+msgstr "コメント"
+
+#: template-parts/content-blogs.php:36 template-parts/content.php:26
+msgid "Read More"
+msgstr "続きを読む"
+
+#: template-parts/content-none.php:17
+msgid "Nothing Found."
+msgstr "申し訳ございません、なにも見つかりませんでした."
+
+#: template-parts/content-none.php:25
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+"最初の投稿を公開する準備はできましたか ? <a href=\"%1$s\">ここから始めましょ"
+"う</a>。"
+
+#: template-parts/content-none.php:29
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+"申し訳ありませんが、検索条件に一致するものはありません。 別のキーワードでもう"
+"一度お試しください。"
+
+#: template-parts/content-none.php:34
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr "お探しのコンテンツは見つかりませんでした。検索をお試しください。"
+
+#: template-parts/content-single.php:28
+#, fuzzy, php-format
+msgid "% comments"
+msgstr "% 件のコメント"
+
+#. Theme Name of the plugin/theme
+#: trt-customize-pro/magazine-newspaper/class-customize.php:76
+msgid "Magazine Newspaper"
+msgstr "Magazine Newspaper"
+
+#. Theme URI of the plugin/theme
+msgid ""
+"https://thebootstrapthemes.com/downloads/free-magazine-newspaper-wordpress-"
+"theme/"
+msgstr ""
+"https://thebootstrapthemes.com/downloads/free-magazine-newspaper-wordpress-"
+"theme/"
+
+#. Author of the plugin/theme
+msgid "thebootstrapthemes"
+msgstr "thebootstrapthemes"
+
+#. Author URI of the plugin/theme
+msgid "http://thebootstrapthemes.com"
+msgstr "http://thebootstrapthemes.com"

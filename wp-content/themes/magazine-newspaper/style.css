@@ -1,0 +1,1170 @@
+/*
+Theme Name: Magazine Newspaper
+Theme URI: https://thebootstrapthemes.com/downloads/free-magazine-newspaper-wordpress-theme/
+Author: thebootstrapthemes
+Author URI: http://thebootstrapthemes.com
+Description: Magazine Newspaper build for newspaper, media, magazine related project. This theme is a minimalist and fully responsive multipurpose theme with full WordPress Customizer integration, that enables you to customize your website with live preview. This theme is very lightweight and easy to use. This is one of  the best WordPress theme designed for newspaper, news portal, news website, magazine, lifestyle, blog, bloggers, photographers, personal portfolio, travel bloggers, small medium and large scale businesses, corporates, lawyers, restaurants, weddings, colleges, universities, hotels, churches, salons, fitness, resorts, ecommerce, businesses, creative freelancers, professionals etc. and also supports woocommerce. We provide you free wordpress theme that is SEO friendly and customizable according to your necessity and desire, which helps you make a positive impression on potential clients by showcasing your visual works in the best possible way. Live Demo - http://thebootstrapthemes.com/preview/?demo=magazine-newspaper , Theme Details - https://thebootstrapthemes.com/downloads/free-magazine-newspaper-wordpress-theme/ , Theme Documentation - https://thebootstrapthemes.com/magazine-newspaper-wordpress-theme-documentation/
+Version: 2.1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: magazine-newspaper
+Tags: right-sidebar, portfolio, news, theme-options, featured-images, rtl-language-support, grid-layout, editor-style, custom-header, threaded-comments, custom-background, custom-colors, blog, footer-widgets, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+magazine-newspaper is based on Underscores http://underscores.me/, (C) 2012-2015 thebootstrapthemes.
+magazine-newspaper is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
+*/
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Normalize
+# Typography
+# Elements
+# Forms
+# Navigation
+	## Links
+	## Menus
+# Accessibility
+# Alignments
+# Clearings
+# Widgets
+# Content
+    ## Posts and pages
+	## Asides
+	## Comments
+# Infinite scroll
+# Media
+	## Captions
+	## Galleries
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Normalize
+--------------------------------------------------------------*/
+
+html {
+    font-family: sans-serif;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+body {
+    margin: 0;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+summary {
+    display: block;
+}
+audio,
+canvas,
+progress,
+video {
+    display: inline-block;
+    vertical-align: baseline;
+}
+audio:not([controls]) {
+    display: none;
+    height: 0;
+}
+[hidden],
+template {
+    display: none;
+}
+a {
+    background-color: transparent;
+}
+a:active,
+a:hover {
+    outline: 0;
+}
+abbr[title] {
+    border-bottom: 1px dotted;
+}
+b,
+strong {
+    font-weight: bold;
+}
+dfn {
+    font-style: italic;
+}
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+mark {
+    background: #ff0;
+    color: #000;
+}
+small {
+    font-size: 80%;
+}
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+sup {
+    top: -0.5em;
+}
+sub {
+    bottom: -0.25em;
+}
+img {
+    border: 0;
+}
+svg:not(:root) {
+    overflow: hidden;
+}
+figure {
+    padding: 15px;
+}
+hr {
+    box-sizing: content-box;
+    height: 0;
+}
+pre {
+    overflow: auto;
+}
+code,
+kbd,
+pre,
+samp {
+    font-family: monospace, monospace;
+    font-size: 1em;
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+    color: inherit;
+    font: inherit;
+    margin: 0;
+}
+button {
+    overflow: visible;
+}
+button,
+select {
+    text-transform: none;
+}
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+    -webkit-appearance: button;
+    cursor: pointer;
+}
+button[disabled],
+html input[disabled] {
+    cursor: default;
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+input {
+    line-height: normal;
+}
+input[type="checkbox"],
+input[type="radio"] {
+    box-sizing: border-box;
+    padding: 0;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    height: auto;
+}
+input[type="search"] {
+    -webkit-appearance: textfield;
+    box-sizing: content-box;
+}
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+fieldset {
+    border: 1px solid #c0c0c0;
+    margin: 0 2px;
+    padding: 0.35em 0.625em 0.75em;
+}
+legend {
+    border: 0;
+    padding: 0;
+}
+textarea {
+    overflow: auto;
+}
+optgroup {
+    font-weight: bold;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+td,
+th {
+    padding: 0;
+}
+/*--------------------------------------------------------------
+# Typography
+--------------------------------------------------------------*/
+
+body,
+button,
+input,
+select,
+textarea {
+    color: #404040;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    clear: both;
+}
+p {
+    margin-bottom: 1.5em;
+}
+dfn,
+cite,
+em,
+i {
+    font-style: italic;
+}
+blockquote {
+    margin: 0 1.5em;
+}
+address {
+    margin: 0 0 1.5em;
+}
+pre {
+    background: #eee;
+    font-family: "Courier 10 Pitch", Courier, monospace;
+    line-height: 1.6;
+    margin-bottom: 1.6em;
+    max-width: 100%;
+    overflow: auto;
+    padding: 1.6em;
+}
+code,
+kbd,
+tt,
+var {
+    font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+    font-size: 15px;
+    font-size: 0.9375rem;
+}
+abbr,
+acronym {
+    border-bottom: 1px dotted #666;
+    cursor: help;
+}
+mark,
+ins {
+    background: #fff9c0;
+    text-decoration: none;
+}
+big {
+    font-size: 125%;
+}
+/*--------------------------------------------------------------
+# Elements
+--------------------------------------------------------------*/
+
+html {
+    box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+    /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+    
+    box-sizing: inherit;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: "";
+}
+blockquote,
+q {
+    quotes: "" "";
+}
+blockquote{
+    border: none;
+    margin: 30px 0;
+    text-align: center;
+    border-top: 5px solid #eee;
+    border-bottom: 5px solid #eee;
+    padding: 30px 0;
+    font-size: 1.5em;
+    font-style: italic;
+}
+
+hr {
+    background-color: #ccc;
+    border: 0;
+    height: 1px;
+    margin-bottom: 1.5em;
+}
+ul,
+ol {
+    margin: 0 0 1.5em 3em;
+}
+ul {
+    list-style: disc;
+}
+ol {
+    list-style: decimal;
+}
+li > ul,
+li > ol {
+    margin-bottom: 0;
+    margin-left: 1.5em;
+}
+dt {
+    font-weight: bold;
+}
+dd {
+    margin: 0 1.5em 1.5em;
+}
+img {
+    height: auto;
+    /* Make sure images are scaled correctly. */
+    
+    max-width: 100%;
+    /* Adhere to container width. */
+}
+table {
+    margin: 0 0 1.5em;
+    width: 100%;
+}
+/*--------------------------------------------------------------
+## Links
+--------------------------------------------------------------*/
+
+a {
+    color: royalblue;
+}
+a:visited {
+    color: purple;
+}
+a:hover,
+a:focus,
+a:active {
+    color: midnightblue;
+}
+a:focus {
+    outline: thin dotted;
+}
+a:hover,
+a:active {
+    outline: 0;
+}
+/*--------------------------------------------------------------
+## Menus
+--------------------------------------------------------------*/
+
+.main-navigation {
+    clear: both;
+    display: block;
+    float: left;
+    width: 100%;
+}
+.main-navigation ul {
+    display: none;
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+}
+.main-navigation li {
+    float: left;
+    position: relative;
+}
+.main-navigation a {
+    display: block;
+    text-decoration: none;
+}
+.main-navigation ul ul {
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+    float: left;
+    position: absolute;
+    top: 1.5em;
+    left: -999em;
+    z-index: 99999;
+}
+.main-navigation ul ul ul {
+    left: -999em;
+    top: 0;
+}
+.main-navigation ul ul a {
+    width: 200px;
+}
+.main-navigation ul ul li {} .main-navigation li:hover > a,
+.main-navigation li.focus > a {} .main-navigation ul ul:hover > a,
+.main-navigation ul ul .focus > a {} .main-navigation ul ul a:hover,
+.main-navigation ul ul a.focus {} .main-navigation ul li:hover > ul,
+.main-navigation ul li.focus > ul {
+    left: auto;
+}
+.main-navigation ul ul li:hover > ul,
+.main-navigation ul ul li.focus > ul {
+    left: 100%;
+}
+.main-navigation .current_page_item > a,
+.main-navigation .current-menu-item > a,
+.main-navigation .current_page_ancestor > a,
+.main-navigation .current-menu-ancestor > a {}
+/* Small menu. */
+
+.menu-toggle,
+.main-navigation.toggled ul {
+    display: block;
+}
+@media screen and (min-width: 37.5em) {
+    .menu-toggle {
+        display: none;
+    }
+    .main-navigation ul {
+        display: block;
+    }
+}
+.site-main .comment-navigation,
+.site-main .posts-navigation,
+.site-main .post-navigation {
+    margin: 0 0 1.5em;
+    overflow: hidden;
+}
+.comment-navigation .nav-previous,
+.posts-navigation .nav-previous,
+.post-navigation .nav-previous {
+    float: left;
+    width: 50%;
+}
+.comment-navigation .nav-next,
+.posts-navigation .nav-next,
+.post-navigation .nav-next {
+    float: right;
+    text-align: right;
+    width: 50%;
+}
+/*--------------------------------------------------------------
+# Accessibility
+--------------------------------------------------------------*/
+/* Text meant only for screen readers. */
+
+.screen-reader-text {
+    clip: rect(1px, 1px, 1px, 1px);
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+}
+.screen-reader-text:focus {
+    background-color: #f1f1f1;
+    border-radius: 3px;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+    clip: auto !important;
+    color: #21759b;
+    display: block;
+    font-size: 14px;
+    font-size: 0.875rem;
+    font-weight: bold;
+    height: auto;
+    left: 5px;
+    line-height: normal;
+    padding: 15px 23px 14px;
+    text-decoration: none;
+    top: 5px;
+    width: auto;
+    z-index: 100000;
+    /* Above WP toolbar. */
+}
+/* Do not show the outline on the skip link target. */
+
+#content[tabindex="-1"]:focus {
+    outline: 0;
+}
+/*--------------------------------------------------------------
+# Alignments
+--------------------------------------------------------------*/
+
+.alignleft {
+    display: inline;
+    float: left;
+    margin-right: 1.5em;
+}
+.alignright {
+    display: inline;
+    float: right;
+    margin-left: 1.5em;
+}
+.aligncenter {
+    clear: both;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*--------------------------------------------------------------
+# Clearings
+--------------------------------------------------------------*/
+
+.clear:before,
+.clear:after,
+.entry-content:before,
+.entry-content:after,
+.comment-content:before,
+.comment-content:after,
+.site-header:before,
+.site-header:after,
+.site-content:before,
+.site-content:after,
+.site-footer:before,
+.site-footer:after {
+    content: "";
+    display: table;
+    table-layout: fixed;
+}
+.clear:after,
+.entry-content:after,
+.comment-content:after,
+.site-header:after,
+.site-content:after,
+.site-footer:after {
+    clear: both;
+}
+/*--------------------------------------------------------------
+# Widgets
+--------------------------------------------------------------*/
+
+.widget {
+    margin: 0 0 1.5em;
+}
+/* Make sure select elements fit in widgets. */
+
+.widget select {
+    max-width: 100%;
+}
+/*--------------------------------------------------------------
+# Content
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Posts and pages
+--------------------------------------------------------------*/
+
+.sticky {
+    display: block;
+}
+.hentry {
+    margin: 0 0 1.5em;
+}
+.byline,
+.updated:not(.published) {
+    display: none;
+}
+.single .byline,
+.group-blog .byline {
+    display: inline;
+}
+.page-content,
+.entry-content,
+.entry-summary {
+    margin: 1.5em 0 0;
+}
+.page-links {
+    clear: both;
+    margin: 0 0 1.5em;
+}
+/*--------------------------------------------------------------
+## Asides
+--------------------------------------------------------------*/
+
+.blog .format-aside .entry-title,
+.archive .format-aside .entry-title {
+    display: none;
+}
+/*--------------------------------------------------------------
+## Comments
+--------------------------------------------------------------*/
+
+.comment-content a {
+    word-wrap: break-word;
+}
+.bypostauthor {
+    display: block;
+}
+/*--------------------------------------------------------------
+# Infinite scroll
+--------------------------------------------------------------*/
+/* Globally hidden elements when Infinite Scroll is supported and in use. */
+
+.infinite-scroll .posts-navigation,
+/* Older / Newer Posts Navigation (always hidden) */
+
+.infinite-scroll.neverending .site-footer {
+    /* Theme Footer (when set to scrolling) */
+    
+    display: none;
+}
+/* When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before. */
+
+.infinity-end.neverending .site-footer {
+    display: block;
+}
+/*--------------------------------------------------------------
+# Media
+--------------------------------------------------------------*/
+
+.page-content .wp-smiley,
+.entry-content .wp-smiley,
+.comment-content .wp-smiley {
+    border: none;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding: 0;
+}
+/* Make sure embeds and iframes fit their containers. */
+
+embed,
+iframe,
+object {
+    max-width: 100%;
+}
+/*--------------------------------------------------------------
+## Captions
+--------------------------------------------------------------*/
+
+.wp-caption {
+    margin-bottom: 1.5em;
+    max-width: 100%;
+}
+.wp-caption img[class*="wp-image-"] {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.wp-caption .wp-caption-text {
+    margin: 0.8075em 0;
+}
+.wp-caption-text {
+    text-align: center;
+}
+/*--------------------------------------------------------------
+## Galleries
+--------------------------------------------------------------*/
+
+.gallery {
+    margin-bottom: 1.5em;
+}
+.gallery-item {
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+    width: 100%;
+}
+.gallery-columns-2 .gallery-item {
+    max-width: 50%;
+}
+.gallery-columns-3 .gallery-item {
+    max-width: 33.33%;
+}
+.gallery-columns-4 .gallery-item {
+    max-width: 25%;
+}
+.gallery-columns-5 .gallery-item {
+    max-width: 20%;
+}
+.gallery-columns-6 .gallery-item {
+    max-width: 16.66%;
+}
+.gallery-columns-7 .gallery-item {
+    max-width: 14.28%;
+}
+.gallery-columns-8 .gallery-item {
+    max-width: 12.5%;
+}
+.gallery-columns-9 .gallery-item {
+    max-width: 11.11%;
+}
+.gallery-caption {
+    display: block;
+}
+/*--------------------------------------------------------------
+## Main style starts here
+--------------------------------------------------------------*/
+
+
+
+
+body {
+    font: 500 14px/22px Raleway;
+    color: #333;
+    background-color: #fff;
+}
+.btn {
+    color: #fff !important;
+    border-radius: 0;
+    border: none;
+    text-transform: uppercase;
+    padding: 5px 25px;
+}
+a,
+a:visited {
+    color: #333;
+    text-decoration: none;
+}
+a:hover {
+    color: #333;
+}
+img,
+input,
+.btn,
+a,
+a:hover,
+a:active,
+a:focus {
+    text-decoration: none;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    outline: 0;
+}
+label{display: block;}
+input, select, textarea {font-size: 1em;padding: 8px;font-weight: normal;width: 100%;border: 1px solid #e0e0e0;}
+
+h1, h2, h3, h4{font-weight: 500;margin: 0 0 30px 0;}
+h5, h6 {font-weight: 400;font-size: 1em;margin:15px 0;}
+h1 {
+    font-size: 2.75em;
+}
+h2 {
+    font-size: 2.5em;font-weight: 600;
+}
+h3 {
+    font-size: 2em;
+}
+
+a.readmore {
+    font-size: 0.8em;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+.spacer {
+    padding-top: 30px;
+    padding-bottom: 0;
+}
+.container {
+    max-width: 1100px;
+}
+
+
+h1.news-title {
+    font-size: 1.5em;color: #fff;margin: 0;
+}
+h1.news-title a{color: #fff;}
+h2.news-heading {
+    text-transform: uppercase;
+    font-size: 1.5em;
+    padding-bottom: 15px;margin-bottom: 20px;
+    margin-top: 0;
+    border-bottom: 1px solid #000;
+}
+h3.widget-title{
+    font-size: 2em;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    margin: 0 0 15px 0;
+}
+h4.news-title {
+    font-size: 1.15em;margin:0 0 20px 0;position: relative;
+}
+h4.news-title:after {
+    content: '';
+    background-color: #000;
+    position: absolute;
+    height: 3px;
+    width: 30px;
+    left: 0;
+    bottom: -13px;
+}
+.page-title h1,h1.category-title{margin: 30px 0;}
+
+.breadcrumbs{margin-top: 20px;font-size: 0.85em;color: #aaa;}
+.breadcrumbs a{color: #aaa;}
+
+.info{font-size: 0.85em;color: #aaa;}
+.info a{color: #aaa;}
+.info .author-image{float: left;margin-top: -10px;margin-right: 10px;}
+.info .author-image img{border-radius: 50%;width: 40px;height: 40px;}
+
+figure.feature-image{padding:15px 0 ;}
+
+
+section.top-news .news-snippet{margin-bottom: 0;}
+.news-snippet {clear: both;display: table;width: 100%;margin-bottom: 45px;}
+.news-snippet .featured-image{float: left;width: 35%;padding-right: 15px;}
+.news-snippet .summary{overflow:hidden;}
+.news-ticker li{list-style:none;}
+
+.banner-news section{margin: -1px;}
+.banner-news .banner-news-list{float: left;width: 33%;padding: 0.5px;position: relative;}
+.banner-news .banner-news-list img{width: 100%;height: 200px;}
+.banner-news .banner-news-list:nth-child(1){float: left;width: 67%;}
+.banner-news .banner-news-list:nth-child(1) img{height: 401px;}
+.banner-news .banner-news-caption{position: absolute;bottom: 0;padding: 30px;width:100%;background:linear-gradient(rgba(0, 0, 0, 0) 0%,rgba(0, 0, 0, 0.7) 100%);}
+.banner-news .banner-news-caption h1{padding: 7px 0;}
+.banner-news .banner-news-caption small.date {color: #ffffffb0;}
+
+
+.news-ticker{margin-top:10px;}
+.news-ticker b{    float: left;
+    padding: 0px 15px;
+    color: #fff;
+    border-radius:0;font-weight: normal;
+    position: relative;
+}
+.news-ticker b:after{
+    content:".";
+    position:absolute;
+    border-bottom: 12px solid transparent;
+    border-top: 10px solid transparent;
+    height: 0;
+    right: -10px;
+    }
+.news-ticker #example{
+    overflow: hidden;
+    position: relative;
+    height: 23px;
+    float: left;
+    width: 75%;
+    padding: 0px 15px 0 20px;
+}
+.news-ticker #example .break-news{margin:0 10px;}
+
+section.top-nav .search-social .search-top,section.top-nav .search-social .social-icons{float: right;}
+section.top-nav .search-social .search-top label{margin: 0;float: left;}
+section.top-nav .search-social .search-top label input{padding: 4px 10px;border: none;line-height: 22px;background: #eee;}
+section.top-nav .search-social .search-top .search-submit{float: left;width: 100px;padding: 4px;border: none;line-height: 22px;border-radius: 0;color: #fff;text-shadow:none;}
+
+
+.recent-news .big-block .news-snippet .featured-image{width: 100%;padding: 0;}
+.recent-news .big-block .news-snippet .summary{width: 100%;margin-top: 15px;float: left;}
+
+.top-news .owl-nav{top: -30px;}
+
+.owl-nav {
+    position: absolute;
+    top: -50px;
+    right: 0;
+    width: 60px;
+    font-size: 0.70em;color:#888;text-transform: uppercase;
+}
+.owl-carousel .owl-nav .owl-prev{float: left;}
+.owl-carousel .owl-nav .owl-next{float: right;}
+
+.owl-dots{text-align: center;}
+.owl-dot {
+    background: #ccc;
+    height: 2px;
+    width: 10px;
+    display: inline-block;margin: 0 3px;
+}
+.owl-dot.active {
+    background: #888;
+}
+.popular-news-snippet .pop-news-title{font-size: 1.15em;margin:15px 0 10px 0;}
+.popular-news-snippet .summary{position: relative;}
+.popular-news-snippet .summary .news-category{
+    position: absolute;
+    top: -45px;
+    left: 8px;
+    color: #ffffff;
+    background: #fec001;
+    padding: 0px 10px;
+    font-size: 0.85em;
+}
+
+.pagination{display: block;}
+.pagination li#next-posts {float: right;}
+.pagination li#previous-posts{float: left;}
+
+section.top-nav ul{margin: 0;}
+section.top-nav a{color: #333;font-size: 0.85em;line-height: 30px;}
+section .social-icons li{padding: 0;float: left;}
+section .social-icons li.facebook a{background: #507cbe;}
+section .social-icons li.twitter a{background: #63ccf1;}
+section .social-icons li.google-plus a{background: #dc4a38;}
+section .social-icons li.youtube-play a{background: #dc4a38;}
+section .social-icons li.linkedin a{background: #2386ef;}
+section .social-icons li.pinterest a{background: #63ccf1;}
+section .social-icons li.instagram a{background: #e22291;}
+section .social-icons a{background-color: #000;line-height: 20px;display: inline-block;padding: 5px;width: 40px;color: #fff;text-align: center;}
+
+section.logo img.custom-logo{margin: 15px 0;}
+
+section.logo{padding: 30px 0;}
+section.logo h1{font-size: 2em;margin-bottom: 0;margin-top: 0;}
+section.logo h2{font-size: 1em;margin: 0;border:none;padding: 0;}
+
+section.main-nav .navbar{background:none;border:none; margin: 0;}
+section.main-nav .navbar-inverse .navbar-nav > li > a{color: rgba(255, 255, 255, 0.6);}
+section.main-nav .navbar-inverse .navbar-nav > .active > a,section.main-nav  .navbar-inverse .navbar-nav > .active > a:hover,section.main-nav  .navbar-inverse .navbar-nav > .active > a:focus{background: none; color: rgba(255, 255, 255,1);}
+
+section.main-content{padding-top: 60px;}
+
+small.date{color: #aaa;}
+
+footer{padding: 45px 0; color:#fff;margin-top: 30px;}
+footer h3.widget-title{color: #fff;}
+footer ul{margin: 0;}
+footer a{color: #fff !important;}
+footer .widget,footer .about-wrapper{margin-bottom: 0;float: left;width: 25%;padding-right: 30px;}
+
+
+
+    /*inside page*/
+.inside-page{padding:0 0 60px 0;}
+.home-archive{padding-top: 60px;}
+
+    .comments-area {
+        margin-top: 30px;
+    }
+    .comments-area h2 {
+        margin-bottom: 15px;
+        font-size: 19px;
+        border: none;
+        margin-top: 45px;
+    }
+    .comments-area ol {
+        margin: 0;
+        list-style: none;
+    }
+    .comments-area ol.comment-list {
+        padding: 0;
+    }
+    .comments-area ol.comment-list article {
+        margin-bottom: 15px;
+        background: #fff;
+        padding: 30px;
+        border-radius: 5px;
+        border: 1px solid #eee;
+    }
+    .comments-area footer {
+        background: none;
+        padding: 0;
+        text-align: left;
+        color: #666;
+            margin: 0 !important;
+    }
+    .comments-area footer a{color: #333 !important;}
+    .comments-area .comment-form label,
+    .comments-area .comment-form input {
+        display: block;
+        font-weight: 300;
+    }
+    .comments-area .comment-form input,
+    .comments-area .comment-form textarea {
+        border: 1px solid #ddd;
+        border-radius: 0;
+        box-shadow: none;
+        padding: 10px;
+        width: 100%;
+    }
+    .comments-area .comment-form .form-submit input {
+        background: #333;
+        color: #fff;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        border: none;
+    }
+    .comment-metadata {
+    font-size: 0.8em;
+    }
+    /*widget*/
+    
+    .widget {
+        margin-bottom: 45px;
+        float: left;
+        width: 100%;
+    }
+    .about-wrapper{margin-bottom: 45px;}
+    .widget ul,
+    .widget ol {
+        margin: 0;
+        padding-left: 0;
+        list-style: none;
+    }
+    .widget li{border-bottom: 1px solid #eee;
+    float: left;
+    width: 100%;
+    padding: 10px 0;
+    margin: 0 !important;}
+    .widget .widgets-list-layout-links {
+    float: left;
+    width: 80.404255%;
+    line-height: 19px;padding-left: 15px;
+    }
+    .widget_archive li,.widget_categories li{text-align: right;}
+    .widget_archive li a,.widget_categories li a{float: left;}
+    h3.widget-title{border-bottom: 1px solid #ddd;padding-bottom: 15px;position: relative;}
+    h3.widget-title:after{content: '';
+    background-color: #000;
+    position: absolute;
+    height: 4px;
+    width: 50px;
+    left: 0;
+    bottom: -1px;}
+    .widget span.post-date {
+    display: block;
+    color: #bbb;
+    font-size: 0.8em;
+    }
+
+    .widget_search{background: #fec001;padding: 30px;}
+    .widget_search input.search-field{padding:7px 5%;border:none;width: 90%;}
+    .widget_search input.search-submit{border:none;background:rgba(0,0,0,0.7);color:#fff;}
+
+    .jetpack_subscription_widget {background: #333;padding: 30px;color: #fff;}
+    .jetpack_subscription_widget h3.widget-title{color: #fff;}
+    .widget #subscribe-email input{width: 100%;}
+
+    .widget_wpcom_social_media_icons_widget li{float: none;}
+    .widget_wpcom_social_media_icons_widget li a{font-size:1.75em;}
+    .widget_wpcom_social_media_icons_widget li a.genericon-facebook{color: #507cbe;}
+    .widget_wpcom_social_media_icons_widget li a.genericon-twitter{color: #63ccf1;}
+    .widget_wpcom_social_media_icons_widget li a.genericon-instagram{color: #e22291;}
+    .widget_wpcom_social_media_icons_widget li a.genericon-pinterest{color: #63ccf1;}
+    .widget_wpcom_social_media_icons_widget li a.genericon-linkedin{color: #2386ef;}
+    .widget_wpcom_social_media_icons_widget li a.genericon-youtube{color: #dc4a38;}
+    .widget_wpcom_social_media_icons_widget li a.genericon-googleplus{color: #dc4a38;}
+
+
+.advertisement-mid{margin: 30px 0;}
+
+/* premium css code control*/
+.pri-color{color: #ffc000;}
+.pri-bg-color{background: #ffc000;}
+h4.news-title:after{background: #ffc000;}
+h2.news-heading {border-color: #ffc000;}
+h3.widget-title{border-color: #ffc000;}
+h3.widget-title:after{background: #ffc000;}
+.jetpack_subscription_widget {background: #ffc000;}
+.banner-news .banner-news-caption a.news-category:visited{color:#ffc000;}
+.banner-news .banner-news-caption a:hover{color: #fff;}
+
+.sec-color{color: #3e63b6;}
+.sec-bg-color{background: #3e63b6;}
+a, a:visited {color: #3e63b6;}
+h2.news-heading {color: #3e63b6;}
+h4.news-title a:hover{color: #3e63b6;}
+h3.widget-title{color: #3e63b6;}
+.search-submit{background: #3e63b6;}
+.news-ticker b{background: #ec0505;}
+.news-ticker b:after{ border-left: 8px solid #ec0505;}
+
+/* premium css code control*/
+
+.scroll-top-wrapper {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    background:rgba(0,0,0,0.5);
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+        cursor: pointer;
+}
+.copyright{padding-bottom: 30px;}
+
+.author-post {border: 1px solid #eee;padding: 30px 30px 15px 30px;margin: 30px 0;}
+.author-post .author-image{float: left;width: 75px;}
+.author-post .author-image img.photo{border-radius: 50%;}
+.author-post .author-details{overflow: hidden;padding:0 30px;}
+.author-post .author-details h4{margin-bottom: 15px;}
+.author-post .author-details p{color:#999;}
+
+    @media (max-width: 991px) {
+       
+       
+    }
+    @media (max-width: 767px) {
+        header .navbar .navbar-nav>li>a {
+            padding: 8px;
+        }
+        header .dropdown-menu > li > a{padding: 8px;}
+        header .navbar-nav {
+            display: block;
+            margin: 0;
+        }
+        header .navbar-nav .dropdown-menu {
+            position: inherit;width: 100%;    background: #e7e7e7;box-shadow: none;
+        }
+        header .navbar-nav .caret{position:absolute; top: 0; right: 0; width: 45px;height: 36px;background:url(images/arrow.png) center/20px no-repeat #333;border: none;}
+        header .navbar-nav .open .dropdown-menu {
+            display: block !important;
+        }
+        
+        header .navbar-nav > li{display: block;border-bottom: 1px solid #eee;}
+        header .navbar-nav > li:last-child{border:none;}
+        .navbar .navbar-toggle {
+            right: 0;
+            background: #333;
+            border: none;
+            border-radius: 0;
+        }
+        .navbar .navbar-toggle .icon-bar {
+            background-color: #fff;
+        }
+        .navbar .navbar-collapse,
+        .navbar .navbar-form {
+            border: none;
+            width: 100%;box-shadow: none;
+        }
+        .top-header .custom-logo-link img{max-height: 40px;}
+        .top-header .social-icon-wrap{display: block;width: 100%;text-align: center;}
+
+
+        section.top-nav ul{text-align: center;}
+        section.top-nav .search-social .search-top, section.top-nav .search-social .social-icons{width: 100%;}
+        section.top-nav .search-social .search-top label{width: 60%}
+        section.top-nav .search-social .search-top .search-submit{width: 40%;}
+        section.top-nav .search-social .social-icons{margin-top: 10px;}
+
+        footer .widget, footer .about-wrapper{width: 100%;padding: 0;margin-bottom: 60px;}
+
+        .banner-news .banner-news-list:nth-child(1){width: 100%}
+        .banner-news .banner-news-list:nth-child(1) img,.banner-news .banner-news-list img{width: 100%;height: auto;}
+        .banner-news .banner-news-list{width: 100%;}
+
+
+    }
