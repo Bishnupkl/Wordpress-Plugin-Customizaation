@@ -7,9 +7,9 @@
 
 function ideapro_custom_posttype()
 {
-    register_post_type('Example',
+    register_post_type('example',
     array(
-        'Labels'=>array(
+        'labels'=>array(
             'name'=>__('Examples')
         ),
         'menu_position' => 5,
