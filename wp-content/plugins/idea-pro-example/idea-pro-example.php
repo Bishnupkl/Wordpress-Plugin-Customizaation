@@ -74,6 +74,8 @@ function ideapro_display_footer_scripts()
 add_action('wp-foot', 'ideapro_display_footer_scripts');
 
 
+
+/*Part 3 of plugin tutorial*/
 function ideapro_form()
 {
     /**content variable**/
@@ -106,23 +108,41 @@ function set_html_content_type()
 
 function ideapro_form_capture()
 {
-    if (array_key_exists('ideapro_submit_form', $_POST)) {
+
+    global $post,$wpdb;
+//    global ;
+    if (array_key_exists('ideapro_form_submit', $_POST)) {
         $to = 'bishnup212@gmail.com';
+
         $subject = ' Idea pro example Site Form Submission';
         $body = '';
         $body .= 'Name: ' . $_POST['full_name'] . " <br/>";
         $body .= 'Email:' . $_POST['email'] . "<br>";
         $body .= 'Phone:' . $_POST['phone'] . "<br>";
         $body .= 'Comments:' . $_POST['comments'] . "<br>";
-        print_r($body);
-        exit();
         add_filter('wp_mail_content_type', 'set_html_content_type');
         wp_mail($to, $subject, $body);
         remove_filter('wp_mail_content_type', 'set_html_content_type');
 
+       /* Insert the information into comment */
+      /*  $time = current_time('mysql');
+        $data = array(
+            'comment_post_ID' => $post->ID,
+            'comment_content' => $body,
+            'comment_author_IP' => $_SERVER['REMOTE_ADDR'],
+            'comment_date' => $time,
+            'comment_approved' => 1,
+        );
+        wp_insert_comment($data); */
+
+      /* Add the submission to the database using the table we created*/
+
+        $insertData = $wpdb->get_results("INSERT INTO ".$wpdb->prefix."form_submission (data) VALUES('".$body."') ");
+
     }
 }
 
-add_action('wp-head', 'ideapro_form_capture');
+add_action('wp_head', 'ideapro_form_capture');
+
 ?>
 
