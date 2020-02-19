@@ -35,3 +35,6 @@ function get_example_post_types()
 
 add_shortcode('get_example_posts','get_example_post_types');
 ?>
+
+
+
