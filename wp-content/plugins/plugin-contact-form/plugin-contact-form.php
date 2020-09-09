@@ -53,12 +53,13 @@ if(!class_exists('Plugin_Contact_Form')) {
 
         function plugin_contact_form()
         {
-            add_menu_page('Plugin Contact Form', 'P Contact Form', 'manage_options', 'plugin-contact-form', array($this,plugin_contact_page), 'dashicons-email')
+            add_menu_page('Plugin Contact Form', 'P Contact Form', 'manage_options', 'plugin-contact-form', array($this, 'plugin_contact_page'), 'dashicons-email');
         }
 
         function plugin_contact_page()
         {
-            echo "THis is out plugin's setting page";
+//            echo "THis is out plugin's setting page";
+            include(plugin_dir_path(__FILE__) . 'includes/views/backend/settings.php');
         }
     }
 
