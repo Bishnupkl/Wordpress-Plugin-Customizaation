@@ -48,7 +48,16 @@ if(!class_exists('Plugin_Contact_Form')) {
     {
         function __construct()
         {
+            $this->define_constants();
             add_action('admin_menu',array($this,'plugin_contact_form'));
+            add_action('admin_enqueue_scripts',array($this, 'register_admin_assets',));
+        }
+
+        function define_constants()
+        {
+            defined('PWCF_PATH') or define('PWCF_PATH', plugin_dir_path(__FILE__));
+            defined('PWCF_URL') or define('PWCF_URL', plugin_dir_url(__FILE__));
+            defined('PWCF_VERSION') or define('PWCF_VERSION', '1.0.0');
         }
 
         function plugin_contact_form()
@@ -59,7 +68,14 @@ if(!class_exists('Plugin_Contact_Form')) {
         function plugin_contact_page()
         {
 //            echo "THis is out plugin's setting page";
-            include(plugin_dir_path(__FILE__) . 'includes/views/backend/settings.php');
+            include(PWCF_PATH . 'includes/views/backend/settings.php');
+        }
+
+        function register_admin_assets()
+        {
+            wp_enqueue_style( 'pwcf_backend_style',PWCF_URL.'assets/css/pwcf-backend.css',array(),PWCF_VERSION );
+            wp_enqueue_script( 'pwcf_backend_script',PWCF_URL.'assets/js/pwcf-backend.js',array('jquery'),PWCF_VERSION );
+
         }
     }
 
