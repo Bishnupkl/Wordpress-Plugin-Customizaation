@@ -84,7 +84,20 @@ if(!class_exists('Plugin_Contact_Form')) {
             $name = $_POST['name_field_label'];
             $email = $_POST['email_field_label'];
             $message = $_POST['message_field_label'];
-            $message = $_POST['_field_label'];
+            $submit = $_POST['submit_button_label'];
+            $admin_email = $_POST['admin_email'];
+
+            $pwcf_settings = array(
+                'name'=>$name,
+                'email'=>$email,
+                'message'=>$message,
+                'submit_button_label'=>$submit,
+                'admin_email'=>$admin_email,
+            );
+
+            update_option('pwcf_settings', $pwcf_settings);
+            wp_redirect(admin_url('admin.php?page=pw-contact-form&message=1'));
+            exit;
         }
     }
 
