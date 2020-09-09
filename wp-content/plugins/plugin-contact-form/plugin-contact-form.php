@@ -24,22 +24,43 @@ defined('ABSPATH') or die('No Script kiddiess please');
  */
 
 //procedural way
-add_action('admin_menu', 'plugin_contact_form');
-if (!function_exists('plugin_contact_form')) {
-    function plugin_contact_form()
-    {
-        add_menu_page('Plugin Contact Form', 'P Contact Form', 'manage_options', 'plugin-contact-form', 'plugin_contact_page', 'dashicons-email');
-    }
-
-}
-
-if (!function_exists('plugin_contact_page')) {
-    function plugin_contact_page()
-    {
-        echo "This is plugin's setting page";
-    }
-}
+//add_action('admin_menu', 'plugin_contact_form');
+//if (!function_exists('plugin_contact_form')) {
+//    function plugin_contact_form()
+//    {
+//        add_menu_page('Plugin Contact Form', 'P Contact Form', 'manage_options', 'plugin-contact-form', 'plugin_contact_page', 'dashicons-email');
+//    }
+//
+//}
+//
+//if (!function_exists('plugin_contact_page')) {
+//    function plugin_contact_page()
+//    {
+//        echo "This is plugin's setting page";
+//    }
+//}
 
 
 //oop way
 
+if(!class_exists('Plugin_Contact_Form')) {
+    class Plugin_Contact_Form
+    {
+        function __construct()
+        {
+            add_action('admin_menu',array($this,'plugin_contact_form'));
+        }
+
+        function plugin_contact_form()
+        {
+            add_menu_page('Plugin Contact Form', 'P Contact Form', 'manage_options', 'plugin-contact-form', array($this,plugin_contact_page), 'dashicons-email')
+        }
+
+        function plugin_contact_page()
+        {
+            echo "THis is out plugin's setting page";
+        }
+    }
+
+    new Plugin_Contact_Form();
+}
