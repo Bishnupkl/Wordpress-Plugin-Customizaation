@@ -51,6 +51,7 @@ if(!class_exists('Plugin_Contact_Form')) {
             $this->define_constants();
             add_action('admin_menu',array($this,'plugin_contact_form'));
             add_action('admin_enqueue_scripts',array($this, 'register_admin_assets',));
+            add_action('admin_post_pw_settings_save_action',array($this,'save_settings_section'));
         }
 
         function define_constants()
@@ -76,6 +77,14 @@ if(!class_exists('Plugin_Contact_Form')) {
             wp_enqueue_style( 'pwcf_backend_style',PWCF_URL.'assets/css/pwcf-backend.css',array(),PWCF_VERSION );
             wp_enqueue_script( 'pwcf_backend_script',PWCF_URL.'assets/js/pwcf-backend.js',array('jquery'),PWCF_VERSION );
 
+        }
+
+        function save_settings_section()
+        {
+            $name = $_POST['name_field_label'];
+            $email = $_POST['email_field_label'];
+            $message = $_POST['message_field_label'];
+            $message = $_POST['_field_label'];
         }
     }
 
