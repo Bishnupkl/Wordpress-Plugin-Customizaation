@@ -54,6 +54,8 @@ if (!class_exists('Plugin_Contact_Form')) {
             add_action('admin_post_pw_settings_save_action', array($this, 'save_settings_section'));
             add_shortcode('plugin_contact_form', array($this, 'generate_shortcode_html'));
             add_action('template_redirect', array($this, 'process_form'));
+            add_action( 'wp_enqueue_scripts', array( $this, 'register_frontend_assets' ) );
+
 
         }
 
@@ -156,6 +158,11 @@ if (!class_exists('Plugin_Contact_Form')) {
                 $_SESSION['pwcf_message'] = $message;
             }
         }
+        function register_frontend_assets() {
+            wp_enqueue_style( 'pwcf-frontend-style', PWCF_URL . 'assets/css/pwcf-frontend.css', array(), PWCF_VERSION );
+            wp_enqueue_script( 'pwcf-frontend-script', PWCF_URL . 'assets/js/pwcf-frontend.js', array( 'jquery' ), PWCF_VERSION );
+        }
+
     }
 
 
