@@ -97,6 +97,7 @@ if (!class_exists('Plugin_Contact_Form')) {
                     'admin_email' => $admin_email,
                 );
 
+
                 update_option('pwcf_settings', $pwcf_settings);
                 wp_redirect(admin_url('admin.php?page=plugin-contact-form&message=1'));
                 exit;
