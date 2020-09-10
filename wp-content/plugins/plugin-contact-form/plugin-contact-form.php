@@ -52,6 +52,9 @@ if (!class_exists('Plugin_Contact_Form')) {
             add_action('admin_menu', array($this, 'plugin_contact_form'));
             add_action('admin_enqueue_scripts', array($this, 'register_admin_assets',));
             add_action('admin_post_pw_settings_save_action', array($this, 'save_settings_section'));
+            add_shortcode('plugin_contact_form', array($this, 'generate_shortcode_html'));
+            add_action('template_redirect', array($this, 'process_form'));
+
         }
 
         function define_constants()
@@ -110,6 +113,47 @@ if (!class_exists('Plugin_Contact_Form')) {
                 echo "<pre>";
                 print_r($array);
                 echo "</pre>";
+            }
+        }
+
+        function generate_shortcode_html()
+        {
+            ob_start();
+            include(PWCF_PATH . 'includes/views/frontend/shortcode.php');
+            $form_html = ob_get_contents();
+            ob_end_clean();
+            return $form_html;
+        }
+
+
+        function process_form()
+        {
+            if (!empty($_POST['pwcf_form_nonce_field']) && wp_verify_nonce($_POST['pwcf_form_nonce_field'], 'pwcf_form_nonce')) {
+                session_start();
+                $pwcf_settings = get_option('pwcf_settings');
+                $name_field = sanitize_text_field($_POST['name_field']);
+                $email_field = sanitize_text_field($_POST['email_field']);
+                $message_field = sanitize_text_field($_POST['message']);
+                $email_html = 'Hello there, <br/>'
+                    . '<br/>'
+                    . 'Your have received an email from your site. Details below: <br/>'
+                    . '<br/>'
+                    . 'Name: ' . $name_field . '<br/>'
+                    . 'Email: ' . $email_field . '<br/>'
+                    . 'Message: ' . $message_field . '<br/>'
+                    . '<br/>'
+                    . 'Thank you';
+                $headers[] = 'Content-Type: text/html; charset=UTF-8';
+                $headers[] = 'No Reply<noreply@localhost.com>';
+                $subject = 'New contact email received';
+                $admin_email = (!empty($pwcf_settings['admin_email'])) ? $pwcf_settings['admin_email'] : get_option('admin_email');
+                $mail_check = wp_mail($admin_email, $subject, $email_html, $headers);
+                if ($mail_check) {
+                    $message = 'Email sent successfully.';
+                } else {
+                    $message = 'Email couldn\'t be sent.';
+                }
+                $_SESSION['pwcf_message'] = $message;
             }
         }
     }
