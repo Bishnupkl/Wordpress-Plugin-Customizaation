@@ -81,11 +81,11 @@ if (!class_exists('Plugin_Contact_Form')) {
 
         function save_settings_section()
         {
-            $name = $_POST['name_field_label'];
-            $email = $_POST['email_field_label'];
-            $message = $_POST['message_field_label'];
-            $submit = $_POST['submit_button_label'];
-            $admin_email = $_POST['admin_email'];
+            $name = sanitize_text_field($_POST['name_field_label']);
+            $email = sanitize_text_field($_POST['email_field_label']);
+            $message = sanitize_text_field($_POST['message_field_label']);
+            $submit = sanitize_text_field($_POST['submit_button_label']);
+            $admin_email = sanitize_email($_POST['admin_email']);
 
             $pwcf_settings = array(
                 'name' => $name,
@@ -96,7 +96,7 @@ if (!class_exists('Plugin_Contact_Form')) {
             );
 
             update_option('pwcf_settings', $pwcf_settings);
-            wp_redirect(admin_url('admin.php?page=pw-contact-form&message=1'));
+            wp_redirect(admin_url('admin.php?page=plugin-contact-form&message=1'));
             exit;
         }
 
