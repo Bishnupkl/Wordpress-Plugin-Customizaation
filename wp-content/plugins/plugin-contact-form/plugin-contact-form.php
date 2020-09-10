@@ -81,23 +81,26 @@ if (!class_exists('Plugin_Contact_Form')) {
 
         function save_settings_section()
         {
-            $name = sanitize_text_field($_POST['name_field_label']);
-            $email = sanitize_text_field($_POST['email_field_label']);
-            $message = sanitize_text_field($_POST['message_field_label']);
-            $submit = sanitize_text_field($_POST['submit_button_label']);
-            $admin_email = sanitize_email($_POST['admin_email']);
+            if (!empty($_POST['pwcf_settings_nonce_field']) && wp_verify_nonce($_POST['pwcf_settings_nonce_field'], 'pwcf_settings_nonce')) {
 
-            $pwcf_settings = array(
-                'name' => $name,
-                'email' => $email,
-                'message' => $message,
-                'submit_button_label' => $submit,
-                'admin_email' => $admin_email,
-            );
+                $name = sanitize_text_field($_POST['name_field_label']);
+                $email = sanitize_text_field($_POST['email_field_label']);
+                $message = sanitize_text_field($_POST['message_field_label']);
+                $submit = sanitize_text_field($_POST['submit_button_label']);
+                $admin_email = sanitize_email($_POST['admin_email']);
 
-            update_option('pwcf_settings', $pwcf_settings);
-            wp_redirect(admin_url('admin.php?page=plugin-contact-form&message=1'));
-            exit;
+                $pwcf_settings = array(
+                    'name' => $name,
+                    'email' => $email,
+                    'message' => $message,
+                    'submit_button_label' => $submit,
+                    'admin_email' => $admin_email,
+                );
+
+                update_option('pwcf_settings', $pwcf_settings);
+                wp_redirect(admin_url('admin.php?page=plugin-contact-form&message=1'));
+                exit;
+            }
         }
 
         function print_array($array)

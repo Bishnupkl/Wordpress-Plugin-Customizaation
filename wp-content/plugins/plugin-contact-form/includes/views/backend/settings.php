@@ -20,6 +20,8 @@ if ( !empty( $pwcf_settings ) ) {
     ?>
     <div class="pwcf-settings-wrap">
         <form method="post" action="<?php echo admin_url( 'admin-post.php' ); ?>">
+
+            <?php wp_nonce_field('pwcf_settings_nonce','pwcf_settings_nonce_field') ?>
             <input type="hidden" name="action" value="pw_settings_save_action"/>
 
             <h3>Form Settings</h3>
