@@ -19,7 +19,7 @@ jQuery(document).ready(function ($) {
             beforeSend: function (xhr) {
                 selector.find('.pwcf-ajax-loader').show();
             },
-            success: fugnction (res) {
+            success: function (res) {
                 selector.find('.pwcf-ajax-loader').hide();
                 res = $.parseJSON(res);
                 selector.find('.pwcf-message-wrap').last().html(res.message).show();
