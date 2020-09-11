@@ -1,6 +1,7 @@
 jQuery(document).ready(function ($) {
     $('body').on('submit', '.pwcf-form', function (e) {
         var selector = $(this);
+        alert('here iam');
         e.preventDefault();
         var name_field = selector.find('.pwcf-name-field').val();
         var email_field = selector.find('.pwcf-email-field').val();
@@ -18,7 +19,7 @@ jQuery(document).ready(function ($) {
             beforeSend: function (xhr) {
                 selector.find('.pwcf-ajax-loader').show();
             },
-            success: function (res) {
+            success: fugnction (res) {
                 selector.find('.pwcf-ajax-loader').hide();
                 res = $.parseJSON(res);
                 selector.find('.pwcf-message-wrap').last().html(res.message).show();

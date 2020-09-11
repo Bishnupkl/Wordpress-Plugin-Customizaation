@@ -1,6 +1,7 @@
 <?php
 defined( 'ABSPATH' ) or die( 'No script kiddies please!!' );
 $pwcf_settings = get_option( 'pwcf_settings' );
+//var_dump($pwcf_settings);
 ?>
 <form class="pwcf-form" method="post" action="">
     <?php wp_nonce_field( 'pwcf_form_nonce', 'pwcf_form_nonce_field' ); ?>
