@@ -169,6 +169,7 @@ if (!class_exists('Plugin_Contact_Form')) {
 
         function process_form_ajax()
         {
+            die('reached here');
 
             if (!empty($_POST['_wpnonce']) && wp_verify_nonce($_POST['_wpnonce'], 'pwcf_ajax_nonce')) {
                 $name_field = sanitize_text_field($_POST['name_field']);
