@@ -1,11 +1,11 @@
 jQuery(document).ready(function ($) {
     $('body').on('submit', '.pwcf-form', function (e) {
         var selector = $(this);
-        alert('here iam');
         e.preventDefault();
         var name_field = selector.find('.pwcf-name-field').val();
         var email_field = selector.find('.pwcf-email-field').val();
         var message_field = selector.find('.pwcf-message-field').val();
+        alert(name_field);
         $.ajax({
             type: 'post',
             url: pwcf_js_obj.ajax_url,
@@ -18,8 +18,9 @@ jQuery(document).ready(function ($) {
             },
             beforeSend: function (xhr) {
                 selector.find('.pwcf-ajax-loader').show();
+                console.log(this.data);
             },
-            success: fugnction (res) {
+            success: function (res) {
                 selector.find('.pwcf-ajax-loader').hide();
                 res = $.parseJSON(res);
                 selector.find('.pwcf-message-wrap').last().html(res.message).show();

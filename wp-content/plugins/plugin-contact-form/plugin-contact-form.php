@@ -190,10 +190,10 @@ if (!class_exists('Plugin_Contact_Form')) {
                 $mail_check = wp_mail($admin_email, $subject, $email_html, $headers);
                 if ($mail_check) {
                     $status = 200;
-                    $message = 'Email sent successfully.';
+                    $message = esc_html__('Email sent successfully.', 'pw-contact-form');
                 } else {
                     $status = 403;
-                    $message = 'Email couldn\'t be sent.';
+                    $message = esc_html__('Email couldn\'t be sent.', 'pw-contact-form');
                 }
                 $response['status'] = $status;
                 $response['message'] = $message;
@@ -202,7 +202,6 @@ if (!class_exists('Plugin_Contact_Form')) {
                 die('No script kiddies please!!');
             }
         }
-
     }
 
 
