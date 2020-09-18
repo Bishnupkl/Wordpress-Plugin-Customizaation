@@ -527,6 +527,9 @@
             "require": {
                 "php": ">=5.2"
             },
+		  "require": {
+			"symfony/dependency-injection": "2.8.50"
+		  },
             "require-dev": {
                 "requests/test-server": "dev-master"
             },
