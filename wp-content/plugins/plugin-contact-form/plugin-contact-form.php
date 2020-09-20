@@ -161,10 +161,11 @@ if (!class_exists('Plugin_Contact_Form')) {
             }
         }
 
-        function register_frontend_assets()
-        {
-            wp_enqueue_style('pwcf-frontend-style', PWCF_URL . 'assets/css/pwcf-frontend.css', array(), PWCF_VERSION);
-            wp_enqueue_script('pwcf-frontend-script', PWCF_URL . 'assets/js/pwcf-frontend.js', array('jquery'), PWCF_VERSION);
+        function register_frontend_assets() {
+            $js_object = array( 'ajax_url' => admin_url( 'admin-ajax.php' ), 'ajax_nonce' => wp_create_nonce( 'pwcf_ajax_nonce' ) );
+            wp_enqueue_style( 'pwcf-frontend-style', PWCF_URL . 'assets/css/pwcf-frontend.css', array(), PWCF_VERSION );
+            wp_enqueue_script( 'pwcf-frontend-script', PWCF_URL . 'assets/js/pwcf-frontend.js', array( 'jquery' ), PWCF_VERSION );
+            wp_localize_script( 'pwcf-frontend-script', 'pwcf_js_obj', $js_object );
         }
 
         function process_form_ajax()
