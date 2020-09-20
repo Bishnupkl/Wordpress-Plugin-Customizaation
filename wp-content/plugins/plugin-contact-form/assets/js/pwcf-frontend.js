@@ -5,7 +5,7 @@ jQuery(document).ready(function ($) {
         var name_field = selector.find('.pwcf-name-field').val();
         var email_field = selector.find('.pwcf-email-field').val();
         var message_field = selector.find('.pwcf-message-field').val();
-        alert(name_field);
+        // alert(name_field);
         $.ajax({
             type: 'post',
             url: pwcf_js_obj.ajax_url,
