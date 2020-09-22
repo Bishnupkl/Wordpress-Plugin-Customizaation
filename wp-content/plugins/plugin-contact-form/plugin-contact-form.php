@@ -17,7 +17,7 @@ defined('ABSPATH') or die('No Script kiddiess please');
  * Requires PHP:      7.2
  * Author:            Bishnu Pokhrel
  * Author URI:        https://github.com/Bishnupkl/
- * Text Domain:       plugin-slug
+ * Text Domain:       plugin-contact-form
  * Domain Path:       /languages
  * License:           GPL v2 or later
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
@@ -57,6 +57,7 @@ if (!class_exists('Plugin_Contact_Form')) {
             add_action('wp_enqueue_scripts', array($this, 'register_frontend_assets'));
             add_action('wp_ajax_pwcf_ajax_action', array($this, 'process_form_ajax'));
             add_action('wp_ajax_nopriv_pwcf_ajax_action', array($this, 'process_form_ajax'));
+            add_action('plugins_loadeed',array($this,'register_plugin_textdomain'));
 
 
         }
@@ -203,6 +204,12 @@ if (!class_exists('Plugin_Contact_Form')) {
             } else {
                 die('No script kiddies please!!');
             }
+        }
+
+        function register_plugin_textdomain()
+        {
+            load_plugin_textdomain('plugin-contact-form', false, basename(dirname(__FILE__) . '/languages'));
+
         }
     }
 
