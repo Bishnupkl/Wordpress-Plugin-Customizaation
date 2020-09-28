@@ -1,0 +1,67 @@
+/*
+Theme Name:     Boss.
+Theme URI:      https://www.buddyboss.com/product/boss-theme/
+Description:    Boss provides a whole new way of visualizing BuddyPress.
+Author:         BuddyBoss.com
+Author URI:     https://www.buddyboss.com
+License: 		GNU General Public License v3 or later
+License URI: 	http://www.gnu.org/licenses/gpl-3.0.html
+Version:        2.4.0
+*/
+
+
+body {
+    direction: rtl;
+    unicode-bidi: embed;
+}
+
+caption,
+th,
+td {
+    text-align: right;
+}
+
+body.left-menu-open #nav-menu>ul>li>a,
+body.left-menu-open .menu-panel .menupop>a {
+    padding: 15px 30px 15px 40px;
+}
+
+.entry-meta .comments-link:before,
+.entry-meta .post-date:before {
+    top: -2px;
+    float: right;
+}
+
+#buddypress div.activity-meta,
+#buddypress .acomment-options {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+li.activity-like-count.reply-like-count {
+    display: none !important;
+}
+
+/*
+ * Brackets displays wrongly for right to left display style
+ * http://stackoverflow.com/questions/5741522/brackets-displays-wrongly-for-right-to-left-display-style
+ */
+.woocommerce ul.products li.product h3:after {
+    content: '\200E‎';
+}
+
+#main ul.horiz-gallery .see-more,
+a.page-numbers[title="←"],
+a.page-numbers[title="→"],
+a.next.page-numbers,
+a.prev.page-numbers {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.woocommerce-pagination a.next.page-numbers,
+.woocommerce-pagination a.prev.page-numbers {
+    -webkit-transform: none;
+    transform: none;
+}

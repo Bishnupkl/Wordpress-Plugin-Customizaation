@@ -1,0 +1,4 @@
+[15-Oct-2019 00:17:56 CST6CDT] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/seanmclo/public_html/online/wp-content/themes/boss/index.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/seanmclo/public_html/online/wp-content/themes/boss/index.php on line 17
